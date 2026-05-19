@@ -337,10 +337,6 @@ img {
     }
 }
 
-.mobile-cta {
-    display: none;
-}
-
 @media (max-width: 576px) {
     .logo {
         font-size: 1.15rem;
@@ -353,12 +349,6 @@ img {
     .header-cta .btn {
         padding: 0.5rem 0.9rem;
         font-size: 0.8rem;
-    }
-    .desktop-cta {
-        display: none;
-    }
-    .mobile-cta {
-        display: inline;
     }
 }
 

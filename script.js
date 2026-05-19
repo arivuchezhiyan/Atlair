@@ -219,6 +219,34 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Real-time robust validation for Indian mobile numbers
+    const phoneField = document.getElementById('form-phone');
+    if (phoneField) {
+        phoneField.addEventListener('input', () => {
+            // Remove all non-numeric characters
+            let cleanVal = phoneField.value.replace(/\D/g, '');
+            
+            // Limit length to 10
+            if (cleanVal.length > 10) {
+                cleanVal = cleanVal.slice(0, 10);
+            }
+            
+            phoneField.value = cleanVal;
+            
+            // Validate starting digit (must be 6, 7, 8, or 9 for Indian mobile numbers)
+            if (cleanVal.length > 0 && !['6', '7', '8', '9'].includes(cleanVal[0])) {
+                phoneField.setCustomValidity('Indian mobile numbers must start with 6, 7, 8, or 9');
+                phoneField.style.borderColor = 'red';
+            } else if (cleanVal.length > 0 && cleanVal.length < 10) {
+                phoneField.setCustomValidity('Phone number must be exactly 10 digits');
+                phoneField.style.borderColor = 'rgba(255, 255, 255, 0.15)'; // light border
+            } else {
+                phoneField.setCustomValidity('');
+                phoneField.style.borderColor = '';
+            }
+        });
+    }
+
     // Real-time borders reset on type/change
     const inputs = [nameInput = document.getElementById('form-name'), 
                     phoneInput = document.getElementById('form-phone'), 
