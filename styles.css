@@ -2111,10 +2111,6 @@ select.form-control option {
         display: none !important;
     }
     
-    .footer-bottom {
-        display: none !important;
-    }
-    
     .mobile-bottom-cta {
         display: flex;
         flex-direction: column;
@@ -2179,7 +2175,7 @@ select.form-control option {
     
     .consult-cta {
         background: var(--accent);
-        color: var(--primary-dark);
+        color: #FFFFFF;
     }
     .consult-cta:active {
         background: var(--accent-hover);
@@ -2197,6 +2193,6 @@ select.form-control option {
     }
     
     body {
-        padding-bottom: 86px !important;
+        padding-bottom: 60px !important;
     }
 }
