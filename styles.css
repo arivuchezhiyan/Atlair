@@ -2196,3 +2196,50 @@ select.form-control option {
         padding-bottom: 60px !important;
     }
 }
+
+/* ==========================================
+   8. Form Submission Loading States & Spinner
+   ========================================== */
+.form-submit-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.form-submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.form-submit-btn .spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #ffffff;
+    animation: spin 0.8s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==========================================
+   9. GPU Hardware Acceleration & Scroll Latency Optimization
+   ========================================== */
+.reveal-up, .reveal-left, .reveal-right, .hero-card, .product-card, .feature-card, .floating-badge, .mobile-cta-btn, .indicator-card {
+    will-change: transform, opacity;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+

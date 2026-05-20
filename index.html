@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://altairhearingcentre.com/">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles.css?v=2.4">
+    <link rel="stylesheet" href="styles.css?v=3.0">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="logo.png">
@@ -259,22 +259,26 @@
                         <p>Confirm details to book your consultation</p>
                     </div>
 
-                    <form id="booking-form" novalidate>
+                    <form id="booking-form" data-secure-action="aHR0cHM6Ly9mb3Jtc3VibWl0LmNvL3lvdXItZW1haWxAZXhhbXBsZS5jb20=" method="POST" novalidate>
+                        <!-- FormSubmit Configuration -->
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New Lead: Free Consultation Booking">
                         <div class="form-group">
                             <label for="form-name" class="form-label">Full Name</label>
-                            <input type="text" id="form-name" class="form-control" placeholder="Enter your full name"
+                            <input type="text" id="form-name" name="name" class="form-control" placeholder="Enter your full name"
                                 required minlength="3">
                         </div>
 
                         <div class="form-group">
                             <label for="form-phone" class="form-label">Phone Number</label>
-                            <input type="tel" id="form-phone" class="form-control" placeholder="10-digit mobile number"
+                            <input type="tel" id="form-phone" name="phone" class="form-control" placeholder="10-digit mobile number"
                                 required pattern="^[6-9]\d{9}$" maxlength="10" inputmode="numeric">
                         </div>
 
                         <div class="form-group">
                             <label for="form-concern" class="form-label">Primary Hearing Concern</label>
-                            <select id="form-concern" class="form-control" required>
+                            <select id="form-concern" name="concern" class="form-control" required>
                                 <option value="" disabled selected>Select your concern</option>
                                 <option value="Difficulty understanding speech in noise">Difficulty in noisy
                                     environments</option>
@@ -290,7 +294,7 @@
 
                         <div class="form-group">
                             <label for="form-time" class="form-label">Preferred Time Slot</label>
-                            <select id="form-time" class="form-control" required>
+                            <select id="form-time" name="preferred_time" class="form-control" required>
                                 <option value="" disabled selected>Choose preferred time</option>
                                 <option value="Morning (10:00 AM - 1:00 PM)">Morning (10:00 AM - 1:00 PM)</option>
                                 <option value="Afternoon (1:00 PM - 4:00 PM)">Afternoon (1:00 PM - 4:00 PM)</option>
