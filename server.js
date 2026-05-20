@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3000;
+const PORT = 8080;
 const MIME_TYPES = {
     '.html': 'text/html',
     '.css': 'text/css',
@@ -16,8 +16,9 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-    // Decode URI to handle spaces or special characters in paths
-    let decodedUrl = decodeURIComponent(req.url);
+    // Strip query parameters and decode URI to handle spaces or special characters in paths
+    let cleanUrl = req.url.split('?')[0];
+    let decodedUrl = decodeURIComponent(cleanUrl);
     
     // Default to index.html
     let filePath = path.join(__dirname, decodedUrl === '/' ? 'index.html' : decodedUrl);
