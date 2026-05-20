@@ -574,11 +574,21 @@ img {
     align-items: center;
     justify-content: center;
 }
+.hero-card-link {
+    display: block;
+    text-decoration: none;
+    transition: var(--transition);
+}
 
 .hero-card-img {
     max-height: 250px;
     object-fit: contain;
     filter: drop-shadow(0 15px 25px rgba(0,0,0,0.2));
+    transition: var(--transition);
+}
+
+.hero-card-link:hover .hero-card-img {
+    transform: scale(1.05);
 }
 
 .hero-card-details {
@@ -624,13 +634,13 @@ img {
 }
 
 .badge-1 {
-    top: 5%;
-    left: -25%;
+    top: -12%;
+    left: -28%;
 }
 
 .badge-2 {
-    bottom: 5%;
-    right: -20%;
+    bottom: -5%;
+    right: -28%;
     animation-delay: 1.5s;
 }
 
@@ -851,18 +861,28 @@ img {
 
 @media (max-width: 768px) {
     .features-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
     }
     .feature-card {
-        padding: 1.5rem 1.25rem;
+        padding: 1.25rem 1rem;
+        border-radius: var(--radius-md);
     }
     .feature-icon-wrapper {
-        margin-bottom: 1rem;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        margin-bottom: 0.75rem;
+    }
+    .feature-icon-wrapper svg {
+        width: 20px;
+        height: 20px;
     }
     .feature-card h3 {
-        margin-bottom: 0.5rem;
-        font-size: 1.2rem;
+        margin-bottom: 0;
+        font-size: 0.95rem;
+        font-weight: 700;
+        line-height: 1.35;
     }
 }
 
@@ -914,6 +934,15 @@ img {
     background: radial-gradient(circle, rgba(30, 27, 75, 0.02) 0%, rgba(30, 27, 75, 0) 70%);
     border-radius: var(--radius-md);
     overflow: hidden;
+}
+
+.product-image-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
 }
 
 .product-image {
@@ -1202,7 +1231,8 @@ select.form-control option {
 
 @media (max-width: 991px) {
     .consultation-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
         gap: 3.5rem;
     }
     
@@ -1930,13 +1960,17 @@ select.form-control option {
     }
     
     .contact-item {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        text-align: center;
+        justify-content: center;
+        gap: 0.5rem;
     }
     
     .contact-item-icon {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
     }
 
     /* Prevent horizontal scrolling */
@@ -2028,5 +2062,106 @@ select.form-control option {
     .whatsapp-btn svg {
         width: 26px !important;
         height: 26px !important;
+    }
+}
+
+/* Base style: Hide Mobile Fixed CTA on Desktop */
+.mobile-bottom-cta {
+    display: none;
+}
+
+/* Fixed Mobile Bottom CTA Bar */
+@media (max-width: 768px) {
+    .floating-widgets-container {
+        display: none !important;
+    }
+    
+    .footer-bottom {
+        display: none !important;
+    }
+    
+    .mobile-bottom-cta {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 9999;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .mobile-cta-copyright {
+        background: rgba(30, 27, 75, 0.98);
+        color: rgba(250, 249, 253, 0.5);
+        font-size: 0.65rem;
+        padding: 5px 10px;
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        font-family: var(--font-body);
+        letter-spacing: 0.5px;
+    }
+    
+    .mobile-cta-buttons {
+        display: flex;
+        width: 100%;
+        height: 60px;
+    }
+    
+    .mobile-cta-btn {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        color: #FFFFFF;
+        font-family: var(--font-heading);
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.3s ease;
+        border-right: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    
+    .mobile-cta-btn:last-child {
+        border-right: none;
+    }
+    
+    .mobile-cta-btn svg {
+        transition: transform 0.2s ease;
+    }
+    
+    .call-cta {
+        background: #007bff;
+    }
+    .call-cta:active {
+        background: #0069d9;
+    }
+    
+    .consult-cta {
+        background: var(--accent);
+        color: var(--primary-dark);
+    }
+    .consult-cta:active {
+        background: var(--accent-hover);
+    }
+    
+    .whatsapp-cta {
+        background: #25D366;
+    }
+    .whatsapp-cta:active {
+        background: #20ba5a;
+    }
+    
+    .mobile-cta-btn:active svg {
+        transform: scale(1.15);
+    }
+    
+    body {
+        padding-bottom: 86px !important;
     }
 }
