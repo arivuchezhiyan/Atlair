@@ -244,27 +244,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 form.reset();
             };
 
-            // Async submit fetch request
+            // Start the asynchronous submit fetch request in the background (fire-and-forget)
+            // Using keepalive: true ensures the request successfully transmits even if the tab/page is closed
             fetch(actionUrl, {
                 method: 'POST',
                 body: formData,
                 headers: {
                     'Accept': 'application/json'
-                }
+                },
+                keepalive: true
             })
             .then(response => {
                 if (response.ok) {
-                    console.log('Lead submitted successfully to FormSubmit!');
+                    console.log('Lead processed in background successfully by FormSubmit!');
                 } else {
-                    console.warn('FormSubmit endpoint returned status:', response.status);
+                    console.warn('Background FormSubmit returned status:', response.status);
                 }
-                showSuccessAndReset();
             })
             .catch(err => {
-                // Graceful fail-safe fallback for offline/development/sandbox testing
-                console.warn('AJAX submit encountered an error, activating seamless fail-safe recovery:', err);
-                showSuccessAndReset();
+                console.warn('Background AJAX submission encountered an error:', err);
             });
+
+            // Optimistic UI response: Instantly transition to success state after a brief, tactile delay (300ms)
+            // This makes the booking experience feel blazingly fast and instantaneous!
+            setTimeout(() => {
+                showSuccessAndReset();
+            }, 300);
         }
     });
 
