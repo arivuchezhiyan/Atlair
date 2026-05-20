@@ -140,13 +140,13 @@ img {
 }
 
 .section {
-    padding: 6rem 0;
+    padding: 3.5rem 0; /* Reduced from 6rem 0 globally */
     position: relative;
 }
 
 @media (max-width: 768px) {
     .section {
-        padding: 4rem 0;
+        padding: 2.25rem 0; /* Reduced from 4rem 0 */
     }
 }
 
@@ -479,7 +479,7 @@ img {
 .hero-actions {
     display: flex;
     gap: 1.25rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem; /* Reduced from 3.5rem */
     flex-wrap: wrap;
 }
 
@@ -488,7 +488,7 @@ img {
     gap: 2.5rem;
     align-items: center;
     border-top: 1px solid rgba(250, 249, 253, 0.15);
-    padding-top: 2rem;
+    padding-top: 1.5rem; /* Reduced from 2rem */
     width: 100%;
 }
 
@@ -736,7 +736,7 @@ img {
 .section-header {
     text-align: center;
     max-width: 700px;
-    margin: 0 auto 4rem auto;
+    margin: 0 auto 2rem auto; /* Reduced from 4rem auto to pull grids closer to headers */
 }
 
 .section-tag {
@@ -855,7 +855,7 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 900px;
-    margin: 0 auto 3.5rem auto;
+    margin: 0 auto 2rem auto; /* Reduced from 3.5rem to pull content closer */
     gap: 2rem;
 }
 
@@ -1036,7 +1036,7 @@ img {
 
 .consultation-desc {
     color: rgba(250, 249, 253, 0.8);
-    margin-bottom: 3rem;
+    margin-bottom: 1.75rem; /* Reduced from 3rem */
     font-size: 1.05rem;
 }
 
@@ -1204,13 +1204,18 @@ select.form-control option {
 .testimonials {
     background-color: var(--bg-light);
     overflow: hidden;
+    padding: 3rem 0; /* Reduced from 6rem 0 */
+}
+
+.testimonials .section-header {
+    margin-bottom: 1.75rem; /* Reduced from 4rem to pull card closer to subtitle */
 }
 
 .testimonials-carousel-container {
     position: relative;
     max-width: 950px;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 0.5rem 0; /* Reduced from 1rem 0 */
 }
 
 .testimonials-track-wrapper {
@@ -1235,7 +1240,7 @@ select.form-control option {
     background: var(--bg-white);
     border: 1px solid var(--border-light);
     border-radius: var(--radius-lg);
-    padding: 3rem;
+    padding: 1.5rem 2.5rem;
     box-shadow: var(--shadow-soft);
     position: relative;
 }
@@ -1255,7 +1260,7 @@ select.form-control option {
 
 .quote-icon {
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 2.5rem;
     color: rgba(199, 157, 58, 0.08);
     width: 80px;
@@ -1267,7 +1272,7 @@ select.form-control option {
     display: flex;
     gap: 0.25rem;
     color: var(--accent);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .testimonial-text {
@@ -1275,7 +1280,7 @@ select.form-control option {
     color: var(--text-dark);
     font-style: italic;
     line-height: 1.7;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     position: relative;
     z-index: 2;
 }
@@ -1318,7 +1323,7 @@ select.form-control option {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem; /* Reduced from 3rem to pull controls closer to slide */
 }
 
 .carousel-btn {
@@ -1366,7 +1371,7 @@ select.form-control option {
 
 @media (max-width: 768px) {
     .testimonial-card {
-        padding: 2rem;
+        padding: 1.25rem 1.5rem;
     }
     
     .testimonial-text {
@@ -1376,14 +1381,14 @@ select.form-control option {
     .quote-icon {
         width: 50px;
         height: 50px;
-        top: 1.5rem;
+        top: 0.75rem;
         right: 1.5rem;
     }
 }
 
 /* Call To Action Section */
 .cta-section {
-    padding: 7rem 0;
+    padding: 3.5rem 0; /* Reduced from 7rem 0 */
     background: var(--primary-gradient);
     position: relative;
     overflow: hidden;
@@ -1450,7 +1455,7 @@ select.form-control option {
 
 @media (max-width: 768px) {
     .cta-section {
-        padding: 5rem 0;
+        padding: 2.25rem 0; /* Reduced from 5rem 0 */
     }
     
     .cta-title {
@@ -1466,7 +1471,7 @@ select.form-control option {
 .footer {
     background-color: var(--primary-dark);
     color: rgba(250, 249, 253, 0.7);
-    padding: 5rem 0 2rem 0;
+    padding: 3rem 0 1.5rem 0; /* Reduced from 5rem 0 2rem 0 */
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     position: relative;
 }
@@ -1784,13 +1789,19 @@ select.form-control option {
 /* Popular Searches Section */
 .popular-searches {
     background-color: var(--bg-neutral);
-    padding: 4rem 0;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
 }
 
 .popular-tag {
     display: inline-block;
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.78rem;
     font-weight: 500;
     color: var(--primary);
     background-color: var(--bg-white);
@@ -1877,5 +1888,12 @@ select.form-control option {
     }
     .cta-title {
         font-size: 1.8rem;
+    }
+    .tags-container {
+        gap: 0.35rem;
+    }
+    .popular-tag {
+        padding: 0.22rem 0.45rem;
+        font-size: 0.68rem;
     }
 }
