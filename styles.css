@@ -624,13 +624,13 @@ img {
 }
 
 .badge-1 {
-    top: 10%;
-    left: -15%;
+    top: 5%;
+    left: -25%;
 }
 
 .badge-2 {
-    bottom: 10%;
-    right: -10%;
+    bottom: 5%;
+    right: -20%;
     animation-delay: 1.5s;
 }
 
