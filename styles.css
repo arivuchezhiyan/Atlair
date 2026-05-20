@@ -1983,29 +1983,64 @@ select.form-control option {
         padding: 0 1rem;
     }
 
-    /* Spacing overrides for tablets */
+    /* Spacing overrides for tablets and mobile */
     .hero {
         padding-top: 5.5rem;
         padding-bottom: 3rem;
     }
+    
+    .hero-grid {
+        gap: 2rem !important;
+    }
+    
+    .consultation-grid {
+        gap: 2rem !important;
+    }
+    
+    .section-header {
+        margin-bottom: 1rem !important;
+    }
+    
+    .popular-searches .section-header {
+        margin-bottom: 1rem !important;
+    }
+    
     .footer {
         padding: 1.75rem 0 1rem 0;
     }
+    
     .footer-grid {
-        margin-bottom: 2rem;
+        gap: 1.25rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .footer-brand p {
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .footer-title {
+        margin-bottom: 0.75rem !important;
+        padding-bottom: 0.25rem !important;
+    }
+    
+    .footer-contact {
+        gap: 0.5rem !important;
     }
 }
 
 @media (max-width: 576px) {
     /* Global spacing reduction on small mobile screens */
     .section {
-        padding: 1.25rem 0;
+        padding: 1.25rem 0 !important;
     }
     .testimonials {
-        padding: 1.25rem 0;
+        padding: 1.25rem 0 !important;
     }
     .cta-section {
-        padding: 1.25rem 0;
+        padding: 1.25rem 0 !important;
+    }
+    .popular-searches {
+        padding: 1.25rem 0 !important;
     }
     .footer {
         padding: 1.5rem 0 0.75rem 0;
@@ -2014,7 +2049,7 @@ select.form-control option {
         margin-bottom: 1.5rem;
     }
     .section-header {
-        margin-bottom: 1rem;
+        margin-bottom: 1rem !important;
     }
     
     /* Hero reduction */
