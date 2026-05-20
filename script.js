@@ -217,11 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.warn('Fallback on secure action URL parsing:', e);
                 }
             } else {
-                actionUrl = form.getAttribute('action') || 'https://formsubmit.co/your-email@example.com';
-            }
-
-            if (actionUrl.includes('formsubmit.co') && !actionUrl.includes('/ajax/')) {
-                actionUrl = actionUrl.replace('formsubmit.co/', 'formsubmit.co/ajax/');
+                actionUrl = form.getAttribute('action') || '';
             }
 
             // Create form payload
@@ -249,17 +245,11 @@ document.addEventListener('DOMContentLoaded', () => {
             fetch(actionUrl, {
                 method: 'POST',
                 body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                },
+                mode: 'no-cors', // Required for Google Apps Script
                 keepalive: true
             })
-            .then(response => {
-                if (response.ok) {
-                    console.log('Lead processed in background successfully by FormSubmit!');
-                } else {
-                    console.warn('Background FormSubmit returned status:', response.status);
-                }
+            .then(() => {
+                console.log('Lead processed in background by Google Apps Script!');
             })
             .catch(err => {
                 console.warn('Background AJAX submission encountered an error:', err);
