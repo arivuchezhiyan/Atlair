@@ -39,7 +39,7 @@
 
 
             <div class="header-cta">
-                <a href="#booking-form" class="btn btn-primary" id="btn-header-consultation">Book Free
+                <a href="#consultation-form" class="btn btn-primary" id="btn-header-consultation">Book Free
                     Consultation</a>
             </div>
         </div>
@@ -65,8 +65,52 @@
             <div class="hero-content reveal-left">
                 <span class="hero-tag">Official Signia Gold Partner</span>
                 <h1 class="hero-title">Hear Life <span>Clearly Again</span></h1>
-<!-- Hero Right Side Showcase -->
-            <div class="hero-showcase reveal-left">
+                <p class="hero-description">
+                    Reconnect with the whispers of loved ones, the rhythm of music, and the clarity of daily
+                    conversations. Experience custom medical-grade hearing care, advanced digital aids, and free
+                    professional screening.
+                </p>
+                <div class="hero-actions">
+                    <a href="#consultation-form" class="btn btn-primary" id="hero-cta-primary">Book Free
+                        Consultation</a>
+                    <a href="#products" class="btn btn-outline-white" id="hero-cta-secondary">Explore Hearing
+                        Solutions</a>
+                </div>
+                <div class="hero-trust-badges">
+                    <div class="trust-badge">
+                        <div class="trust-badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <div class="trust-badge-text">
+                            <h5>ISO 9001:2015</h5>
+                            <p>Certified Care Centre</p>
+                        </div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="trust-badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="trust-badge-text">
+                            <h5>10,000+ Patients</h5>
+                            <p>Success Stories in Chennai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Right Side Showcase -->
+            <div class="hero-showcase reveal-right">
                 <div class="showcase-glow"></div>
 
                 <!-- Floating badge 1: Top Left -->
@@ -87,7 +131,7 @@
 
                 <!-- Floating Featured Product Card -->
                 <div class="hero-card">
-                    <a href="#booking-form" class="hero-card-link">
+                    <a href="#consultation-form" class="hero-card-link">
                         <div class="hero-card-img-wrapper">
                             <!-- Product image 1 -->
                             <img src="img1.png" alt="Styletto IX Hearing Aid" class="hero-card-img"
@@ -117,76 +161,6 @@
                     </div>
                 </div>
             </div>
-            </div>
-
-<!-- Right Column Form Card -->
-            <div class="form-card-wrapper reveal-right">
-                <div class="form-card" id="booking-form">
-                    <div class="form-header">
-                        <h3>Schedule Visit</h3>
-                        <p>Confirm details to book your consultation</p>
-                    </div>
-
-                    <form id="appointment-form"
-                        data-secure-action="https://script.google.com/macros/s/AKfycbxlDB-xEpEi2R6MtJrnLwr0aUgKVYfXvN_AfUvTWnkj8C5PqMS0MwxqwPXMtPRTxofVfw/exec"
-                        method="POST" novalidate>
-                        <!-- Google Apps Script Configuration -->
-                        <!-- 1. Deploy the provided Apps Script code as a Web App -->
-                        <!-- 2. Paste the resulting URL into the data-secure-action attribute above -->
-                        <div class="form-group">
-                            <label for="form-name" class="form-label">Full Name</label>
-                            <input type="text" id="form-name" name="name" class="form-control"
-                                placeholder="Enter your full name" required minlength="3">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="form-phone" class="form-label">Phone Number</label>
-                            <input type="tel" id="form-phone" name="phone" class="form-control"
-                                placeholder="10-digit mobile number" required pattern="^[6-9]\d{9}$" maxlength="10"
-                                inputmode="numeric">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="form-concern" class="form-label">Primary Hearing Concern</label>
-                            <select id="form-concern" name="concern" class="form-control" required>
-                                <option value="" disabled selected>Select your concern</option>
-                                <option value="Difficulty understanding speech in noise">Difficulty in noisy
-                                    environments</option>
-                                <option value="Tinnitus (ringing in the ears)">Tinnitus / Ringing in ears</option>
-                                <option value="Age-related gradual hearing loss">Age-related hearing loss</option>
-                                <option value="Looking to upgrade existing hearing aid">Upgrading existing device
-                                </option>
-                                <option value="Booking for a parent or family member">Consultation for family member
-                                </option>
-                                <option value="General check-up / routine screening">General hearing screening</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="form-time" class="form-label">Preferred Time Slot</label>
-                            <select id="form-time" name="preferred_time" class="form-control" required>
-                                <option value="" disabled selected>Choose preferred time</option>
-                                <option value="Morning (10:00 AM - 1:00 PM)">Morning (10:00 AM - 1:00 PM)</option>
-                                <option value="Afternoon (1:00 PM - 4:00 PM)">Afternoon (1:00 PM - 4:00 PM)</option>
-                                <option value="Evening (4:00 PM - 7:30 PM)">Evening (4:00 PM - 7:30 PM)</option>
-                            </select>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary form-submit-btn" id="btn-submit-booking">
-                            Schedule Free Visit
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" style="margin-left: 0.5rem;">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-            </div>
-
-
-            
         </div>
     </section>
 
@@ -195,14 +169,26 @@
         <div class="container consultation-grid">
             <!-- Left Column Content -->
             <div class="consultation-content reveal-left">
+                <span class="consultation-tag">Immediate Availability</span>
+                <h2 class="consultation-title">Book Your Free Clinical Hearing Assessment</h2>
+                <p class="consultation-desc">
+                    Ready to take the first step towards better hearing? Fill out our simple form to secure a
+                    complimentary diagnostic appointment at any of our three state-of-the-art clinics in Chennai.
+                </p>
+
                 <div class="trust-indicators">
                     <!-- Indicator 1 -->
                     <div class="indicator-card">
                         <div class="indicator-icon">
-                            <img src="logo.png" alt="Signia Icon" class="indicator-img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
                         </div>
                         <div class="indicator-text">
-                            <h4>Digital Diagnostics</h4>
+                            <h4>Free Digital Diagnostics</h4>
                             <p>Full audiogram evaluation at no cost.</p>
                         </div>
                     </div>
@@ -210,7 +196,14 @@
                     <!-- Indicator 2 -->
                     <div class="indicator-card">
                         <div class="indicator-icon">
-                            <img src="logo.png" alt="Signia Icon" class="indicator-img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
                         </div>
                         <div class="indicator-text">
                             <h4>Certified Audiologists</h4>
@@ -221,7 +214,15 @@
                     <!-- Indicator 3 -->
                     <div class="indicator-card">
                         <div class="indicator-icon">
-                            <img src="logo.png" alt="Signia Icon" class="indicator-img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
                         </div>
                         <div class="indicator-text">
                             <h4>Advanced German Tech</h4>
@@ -232,7 +233,13 @@
                     <!-- Indicator 4 -->
                     <div class="indicator-card">
                         <div class="indicator-icon">
-                            <img src="logo.png" alt="Signia Icon" class="indicator-img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polygon points="6 2 18 2 18 6 6 6"></polygon>
+                                <rect x="3" y="6" width="18" height="16" rx="2"></rect>
+                                <line x1="10" y1="12" x2="14" y2="12"></line>
+                            </svg>
                         </div>
                         <div class="indicator-text">
                             <h4>Diagnostic Equipment</h4>
@@ -242,61 +249,97 @@
                 </div>
             </div>
 
-            <!-- Right Column: Signia Info -->
-            <div class="signia-partner-card reveal-right">
-                <div class="signia-partner-info">
-                    <img src="signia_logo_2.png" alt="Signia Gold Partner" class="signia-logo-icon" heig
-                    ht="500" width="500">
-                    <div class="signia-text-content">
-                        <span class="partner-tag">Authorized Partner</span>
-                        <h3 class="partner-title">Signia Gold Partner</h3>
-                        <p class="partner-desc">Experience premium German audiology. As a Gold Partner, we offer exclusive access to latest Signia technologies and expert clinical fittings.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Altair Section -->
-    <section class="section advantage" id="advantage">
+
+    <!-- Why Choose Us Section -->
+    <section class="section why-choose-us" id="why-choose-us">
         <div class="container">
             <div class="section-header reveal-up">
-                <span class="section-tag">Why Choose Us</span>
-                <h2 class="section-title">Why Choose ALTAIR</h2>
-                <p class="section-desc">At Altair, we offer personalized hearing solutions with the latest technology, expert care, and ongoing support. Experience improved hearing with top-quality devices tailored to your needs, backed by exceptional service and flexible financing options.</p>
+                <span class="section-tag">Clinical Excellence</span>
+                <h2 class="section-title">The Altair Advantage</h2>
+                <p class="section-desc">We combine premium German audiology technology, certified audiologists, and
+                    dedicated lifelong support to ensure your hearing journey is seamless.</p>
             </div>
 
-            <div class="advantage-grid">
-                <!-- Point 1 -->
-                <div class="advantage-card reveal-up">
-                    <div class="advantage-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2h-.2ZM11.1 21.1a.3.3 0 1 0 .2-.1h-.2ZM12 5c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9ZM15.8 4c.3 0 .7.1 1 .3s.5.5.5.8c0 .3-.1.6-.3.8-.2.2-.5.3-.8.3h-.4v6.2c1.7.3 3.3.9 4.8 1.8.4.2.6.7.4 1.2-.2.4-.7.6-1.2.4-1.3-.8-2.7-1.4-4.2-1.6V18c0 1.1-.9 2-2 2s-2-.9-2-2v-.4c-.5.2-1.1.4-1.7.4-1.1 0-2-.9-2-2 0-.3 0-.7.1-1 .1-.3.2-.6.4-.9.2-.3.4-.5.7-.7s.6-.2.9-.2c.6 0 1.1.2 1.5.7l1.1 1.1V10c-1.5.2-2.9.8-4.2 1.6-.5.2-.9 0-1.2-.4-.2-.5 0-1 .4-1.2 1.5-.9 3.1-1.5 4.8-1.8V4h-.4c-.3 0-.6-.1-.8-.3-.2-.2-.3-.5-.3-.8 0-.3.2-.6.5-.8s.7-.3 1-.3h1z"/></svg>
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card reveal-up delay-1" id="feature-audiologists">
+                    <div class="feature-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M4.8 2.2c0-.2.2-.4.4-.4h13.6c.2 0 .4.2.4.4v2.4c0 .2-.2.4-.4.4H5.2c-.2 0-.4-.2-.4-.4V2.2zM8.5 7h7l.5 3h-8z">
+                            </path>
+                            <path d="M12 10v10m-3.5 0h7"></path>
+                            <rect x="3" y="10" width="18" height="10" rx="2"></rect>
+                        </svg>
                     </div>
-                    <h3>Audiology Consultation</h3>
+                    <h3>Expert Audiologists</h3>
                 </div>
 
-                <!-- Point 2 -->
-                <div class="advantage-card reveal-up delay-1">
-                    <div class="advantage-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg>
+                <!-- Card 2 -->
+                <div class="feature-card reveal-up delay-2" id="feature-tech">
+                    <div class="feature-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M 3,18 H 7 C 11,18 9,6 13,6 H 17"></path>
+                            <path d="M 21,6 V 18"></path>
+                        </svg>
                     </div>
-                    <h3>Zero % EMI</h3>
+                    <h3>Signia Gold Partner</h3>
                 </div>
 
-                <!-- Point 3 -->
-                <div class="advantage-card reveal-up delay-2">
-                    <div class="advantage-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 3 4 4-4 4"></path><path d="M20 7H9a7 7 0 0 0 0 14h1"></path><path d="m8 21-4-4 4-4"></path><path d="M4 17h11a7 7 0 0 0 0-14h-1"></path></svg>
+                <!-- Card 3 -->
+                <div class="feature-card reveal-up delay-3" id="feature-care">
+                    <div class="feature-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                            </path>
+                        </svg>
                     </div>
-                    <h3>Best Exchange Benefits</h3>
+                    <h3>Personalized Care</h3>
                 </div>
 
-                <!-- Point 4 -->
-                <div class="advantage-card reveal-up delay-3">
-                    <div class="advantage-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                <!-- Card 4 -->
+                <div class="feature-card reveal-up delay-4" id="feature-affordable">
+                    <div class="feature-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <line x1="12" y1="10" x2="12" y2="16"></line>
+                            <line x1="8" y1="12" x2="16" y2="12"></line>
+                        </svg>
                     </div>
-                    <h3>Extended Warranty</h3>
+                    <h3>Affordable Solutions</h3>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="feature-card reveal-up delay-5" id="feature-screening">
+                    <div class="feature-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <h3>Free Consultation</h3>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="feature-card reveal-up delay-6" id="feature-support">
+                    <div class="feature-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Ongoing Care & Support</h3>
                 </div>
             </div>
         </div>
@@ -317,7 +360,7 @@
                 <div class="product-card reveal-up delay-1" id="product-styletto">
                     <span class="product-badge">Premium Design</span>
                     <div class="product-image-container">
-                        <a href="#booking-form">
+                        <a href="#consultation-form">
                             <img src="img1.png" alt="Styletto IX" class="product-image">
                         </a>
                     </div>
@@ -327,7 +370,7 @@
                         <p class="product-desc">An ultra-slim, sleek hearing aid designed like high-end eyewear.
                             Delivers incredible speech clarity in noisy group conversations.</p>
                         <div class="product-btn-wrapper">
-                            <a href="#booking-form" class="product-link">
+                            <a href="#consultation-form" class="product-link">
                                 Request Pricing List
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
@@ -344,17 +387,17 @@
                 <div class="product-card reveal-up delay-2" id="product-pure-ix">
                     <span class="product-badge">Most Popular</span>
                     <div class="product-image-container">
-                        <a href="#booking-form">
+                        <a href="#consultation-form">
                             <img src="img2.png" alt="Pure Charge & Go IX" class="product-image">
                         </a>
                     </div>
                     <div class="product-info">
                         <span class="product-type">Receiver-In-Canal (RIC)</span>
-                        <h3 class="product-name">Active Pro IX</h3>
+                        <h3 class="product-name">Pure Charge & Go IX</h3>
                         <p class="product-desc">Small, elegant, and highly discreet. Equipped with Bluetooth streaming,
                             smart AI control, and an exceptional long-life rechargeable cell.</p>
                         <div class="product-btn-wrapper">
-                            <a href="#booking-form" class="product-link">
+                            <a href="#consultation-form" class="product-link">
                                 Request Pricing List
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
@@ -591,7 +634,7 @@
                 Don't let hearing loss hold you back. Connect with our audiology specialists and find the exact,
                 comfortable hearing device that suits your life.
             </p>
-            <a href="#booking-form" class="btn btn-primary cta-btn" id="btn-cta-bottom">Book Free
+            <a href="#consultation-form" class="btn btn-primary cta-btn" id="btn-cta-bottom">Book Free
                 Consultation</a>
         </div>
     </section>
@@ -604,28 +647,28 @@
                 <h2 class="section-title" style="font-size: 1.8rem;">Popular Searches</h2>
             </div>
             <div class="tags-container reveal-up">
-                <a href="#booking-form" class="popular-tag">Signia Aids</a>
-                <a href="#booking-form" class="popular-tag">Siemens Dealers</a>
-                <a href="#booking-form" class="popular-tag">Hearing Centre</a>
-                <a href="#booking-form" class="popular-tag">Invisible Aids</a>
-                <a href="#booking-form" class="popular-tag">Rechargeable</a>
-                <a href="#booking-form" class="popular-tag">Hearing Tests</a>
-                <a href="#booking-form" class="popular-tag">Styletto Price</a>
-                <a href="#booking-form" class="popular-tag">Vadapalani Clinic</a>
-                <a href="#booking-form" class="popular-tag">Adambakkam Care</a>
-                <a href="#booking-form" class="popular-tag">Mandaveli Audio</a>
-                <a href="#booking-form" class="popular-tag">Tinnitus Care</a>
-                <a href="#booking-form" class="popular-tag">Free Trial</a>
-                <a href="#booking-form" class="popular-tag">Active Pro</a>
-                <a href="#booking-form" class="popular-tag">Pure Charge</a>
-                <a href="#booking-form" class="popular-tag">Device Trial</a>
-                <a href="#booking-form" class="popular-tag">Best Clinic</a>
-                <a href="#booking-form" class="popular-tag">Siemens Care</a>
-                <a href="#booking-form" class="popular-tag">Ear Moulds</a>
-                <a href="#booking-form" class="popular-tag">Kids Audiology</a>
-                <a href="#booking-form" class="popular-tag">Aid Batteries</a>
-                <a href="#booking-form" class="popular-tag">Insio IX</a>
-                <a href="#booking-form" class="popular-tag">Home Test</a>
+                <a href="#" class="popular-tag">Signia Aids</a>
+                <a href="#" class="popular-tag">Siemens Dealers</a>
+                <a href="#" class="popular-tag">Hearing Centre</a>
+                <a href="#" class="popular-tag">Invisible Aids</a>
+                <a href="#" class="popular-tag">Rechargeable</a>
+                <a href="#" class="popular-tag">Hearing Tests</a>
+                <a href="#" class="popular-tag">Styletto Price</a>
+                <a href="#" class="popular-tag">Vadapalani Clinic</a>
+                <a href="#" class="popular-tag">Adambakkam Care</a>
+                <a href="#" class="popular-tag">Mandaveli Audio</a>
+                <a href="#" class="popular-tag">Tinnitus Care</a>
+                <a href="#" class="popular-tag">Free Trial</a>
+                <a href="#" class="popular-tag">Active Pro</a>
+                <a href="#" class="popular-tag">Pure Charge</a>
+                <a href="#" class="popular-tag">Device Trial</a>
+                <a href="#" class="popular-tag">Best Clinic</a>
+                <a href="#" class="popular-tag">Siemens Care</a>
+                <a href="#" class="popular-tag">Ear Moulds</a>
+                <a href="#" class="popular-tag">Kids Audiology</a>
+                <a href="#" class="popular-tag">Aid Batteries</a>
+                <a href="#" class="popular-tag">Insio IX</a>
+                <a href="#" class="popular-tag">Home Test</a>
             </div>
         </div>
     </section>
@@ -650,10 +693,10 @@
             <div class="reveal-up delay-1">
                 <h4 class="footer-title">Our Centres</h4>
                 <ul class="footer-links">
-                    <li><a href="#booking-form"><b>Adambakkam</b></a></li>
-                    <li><a href="#booking-form"><b>Vadapalani</b></a></li>
-                    <li><a href="#booking-form"><b>Porur</b></a></li>
-                    <li><a href="#booking-form"><b>Mandaveli</b></a></li>
+                    <li><a href="#consultation-form"><b>Adambakkam</b></a></li>
+                    <li><a href="#consultation-form"><b>Vadapalani</b></a></li>
+                    <li><a href="#consultation-form"><b>Porur</b></a></li>
+                    <li><a href="#consultation-form"><b>Mandaveli</b></a></li>
                 </ul>
             </div>
 
@@ -773,7 +816,7 @@
                 </svg>
                 <span>WhatsApp</span>
             </a>
-            <a href="#booking-form" class="mobile-cta-btn consult-cta" aria-label="Book Free Consultation">
+            <a href="#consultation-form" class="mobile-cta-btn consult-cta" aria-label="Book Free Consultation">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>

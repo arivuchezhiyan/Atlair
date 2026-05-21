@@ -634,13 +634,13 @@ img {
 }
 
 .badge-1 {
-    top: -12%;
-    left: -28%;
+    top: 5%;
+    left: -35%;
 }
 
 .badge-2 {
-    bottom: -5%;
-    right: -28%;
+    bottom: -8%;
+    right: -30%;
     animation-delay: 1.5s;
 }
 
@@ -1070,14 +1070,65 @@ img {
 
 .consultation-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 5rem;
     align-items: center;
 }
 
 .consultation-content {
     display: flex;
     flex-direction: column;
+}
+
+/* Signia Partner Card Styling */
+.signia-partner-card {
+    background: var(--bg-neutral);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-light);
+    transition: var(--transition);
+}
+
+.signia-partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-light);
+}
+
+.signia-partner-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.signia-logo-icon {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.partner-tag {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.partner-title {
+    color: var(--primary);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.partner-desc {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 1rem;
 }
 
 .consultation-tag {
@@ -1101,6 +1152,75 @@ img {
     font-size: 1.05rem;
 }
 
+/* Advantage Section Styles */
+.advantage {
+    background: #f8fafc; /* Lighter, clean background */
+    padding: 3.5rem 0; /* Minimized padding */
+}
+
+.advantage-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem; /* Reduced gap */
+    margin-top: 2rem; /* Reduced margin */
+}
+
+.advantage-card {
+    background: var(--bg-white);
+    padding: 1.5rem 1rem; /* Minimized card padding */
+    border-radius: var(--radius-md);
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    border: 1px solid var(--border-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-light);
+}
+
+.advantage-icon {
+    width: 54px; /* Slightly smaller icon size */
+    height: 54px;
+    background: var(--accent-light);
+    color: var(--accent);
+    border-radius: 12px; /* Changed to rounded square for compact look */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.advantage-card:hover .advantage-icon {
+    background: var(--accent);
+    color: var(--text-light);
+}
+
+.advantage-card h3 {
+    color: var(--primary);
+    font-size: 1.1rem; /* Slightly smaller font */
+    font-weight: 700;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .advantage-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .advantage-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Consultation Trust Badges Grid */
 .trust-indicators {
     display: grid;
@@ -1117,14 +1237,17 @@ img {
 .indicator-icon {
     width: 44px;
     height: 44px;
-    background: var(--bg-neutral);
-    border: 1px solid var(--border-light);
-    color: var(--accent);
-    border-radius: 50%;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+}
+
+.indicator-img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
 
 .indicator-text h4 {

@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     // 5. Booking Form Validation & Success Modal
     // ==========================================
-    const form = document.getElementById('booking-form');
+    const form = document.getElementById('appointment-form');
     const successModal = document.getElementById('success-modal');
     const closeModalBtn = document.getElementById('btn-close-modal');
     
