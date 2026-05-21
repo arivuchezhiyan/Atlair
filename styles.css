@@ -1070,7 +1070,7 @@ img {
 
 /* Signia Partnership Module (New) */
 .signia-partnership-module {
-    max-width: 600px;
+    max-width: 850px;
     margin: 0 auto;
     background: var(--bg-white);
     border-radius: var(--radius-lg);
@@ -1081,14 +1081,14 @@ img {
 
 .signia-partner-header {
     background: #f4f4fa; /* Soft lavender-blue background like image */
-    padding: 2.5rem;
+    padding: 1.75rem 2.5rem;
     display: flex;
     align-items: center;
     gap: 2.5rem;
 }
 
 .signia-logo-box {
-    flex: 0 0 120px;
+    flex: 0 0 130px;
 }
 
 .signia-partner-logo {
@@ -1100,26 +1100,26 @@ img {
 .signia-text-box .auth-tag {
     color: var(--accent);
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     letter-spacing: 1.5px;
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     line-height: 1.3;
 }
 
 .signia-text-box .partner-title {
     color: var(--primary);
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1.1;
     margin: 0;
 }
 
 .trust-indicators-list {
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    padding: 2.25rem 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 3.5rem;
 }
 
 .indicator-item {
@@ -1129,45 +1129,65 @@ img {
 }
 
 .indicator-item .indicator-icon {
-    width: 32px;
-    height: 32px;
+    width: 38px;
+    height: 38px;
     flex-shrink: 0;
     margin-top: 4px;
 }
 
 .indicator-item h4 {
     color: var(--primary);
-    font-size: 1.1rem;
-    margin-bottom: 0.4rem;
+    font-size: 1.35rem;
+    margin-bottom: 0.25rem;
     font-weight: 700;
+    line-height: 1.2;
 }
 
 .indicator-item p {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     color: var(--text-muted);
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .signia-partnership-module {
+        max-width: 100%;
+    }
+    
+    .trust-indicators-list {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    
+    .signia-partner-header {
+        padding: 2rem;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 576px) {
     .signia-partner-header {
         padding: 2rem 1.5rem;
+        flex-direction: column;
+        text-align: center;
         gap: 1.5rem;
     }
     
     .signia-logo-box {
-        flex: 0 0 90px;
+        flex: 0 0 100px;
     }
     
     .signia-text-box .partner-title {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     
     .trust-indicators-list {
         padding: 2rem 1.5rem;
-        gap: 1.75rem;
     }
     
     .indicator-item {
-        gap: 1rem;
+        gap: 1.25rem;
     }
 }
 
