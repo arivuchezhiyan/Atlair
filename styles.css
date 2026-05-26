@@ -1857,14 +1857,15 @@ h1, h2, h3, h4, h5, h6 {
 .contact-item {
     display: flex;
     gap: 1rem;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .contact-item-icon {
     color: var(--accent-orange);
     flex-shrink: 0;
-    margin-top: 3px;
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
 }
 
 .contact-item-text {
