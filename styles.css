@@ -450,7 +450,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     align-items: center;
 }
 
@@ -486,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Platform Image & Wrapper */
 .hero-platform-wrapper {
-    margin-top: 30px;
+    margin-top: -25px;
     display: flex;
     justify-content: center;
 }
@@ -568,7 +568,7 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-    margin-bottom: 35px;
+    margin-bottom: 0px;
 }
 
 .hero-bullets-desktop .hero-bullet-item {
@@ -586,7 +586,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-content-desktop .hero-platform-wrapper {
-    margin-top: 35px;
+    margin-top: -55px;
     justify-content: flex-start;
 }
 
@@ -1517,7 +1517,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 64px;
     background-color: #ffffff;
     z-index: 999;
     box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
@@ -1530,12 +1530,26 @@ h1, h2, h3, h4, h5, h6 {
 .sticky-footer-btn {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 4px;
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.5rem; /* Clean large action icons */
     transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.sticky-footer-btn i {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.sticky-footer-btn span {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1;
 }
 
 
@@ -1705,7 +1719,7 @@ h1, h2, h3, h4, h5, h6 {
 .product-img-wrapper {
     height: 220px;
     padding: 30px;
-    background-color: #f8fafc;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1716,6 +1730,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     max-width: 100%;
     object-fit: contain;
+    mix-blend-mode: multiply;
     transition: transform var(--transition-normal);
 }
 
