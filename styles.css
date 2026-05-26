@@ -195,7 +195,14 @@ h1, h2, h3, h4, h5, h6 {
 .header-right-desktop {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.header-cta-btn {
+    padding: 10px 22px !important;
+    font-size: 0.9rem !important;
+    white-space: nowrap;
 }
 
 .expert-contact {
@@ -396,9 +403,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Mobile Hero (Couple Background style) */
 .hero-section.mobile-layout {
-    background: linear-gradient(to bottom, rgba(238, 245, 252, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%), url('background.jpeg');
-    background-size: cover;
-    background-position: center;
+    background: var(--bg-blue-gradient);
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
     text-align: center;
 }
 
@@ -409,8 +417,14 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.3); /* keep it light and vibrant */
-    z-index: 1;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.12;
+    filter: blur(4px);
+    z-index: 0;
+    pointer-events: none;
 }
 
 .hero-section.mobile-layout .container {
@@ -1889,9 +1903,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1.5fr;
-    gap: 2.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
     margin-bottom: 2.5rem;
+    align-items: center;
 }
 
 .footer-brand {
@@ -1959,6 +1974,35 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1.25rem;
 }
 
+.footer-contact-horizontal {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-icon-inline {
+    color: var(--accent-orange);
+    font-size: 1.1rem;
+    margin-right: 6px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-phone-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: var(--transition-fast);
+    font-weight: 600;
+}
+
+.footer-phone-link:hover {
+    color: var(--accent-orange) !important;
+}
+
 .contact-item {
     display: flex;
     gap: 1rem;
@@ -2010,15 +2054,15 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .footer-grid {
-        display: grid;
-        grid-template-columns: 1fr 1.2fr; /* Make columns sit parallelly on mobile screens */
-        gap: 25px 12px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 20px !important;
         margin-bottom: 1.5rem !important;
-        align-items: start;
+        align-items: center;
+        text-align: center;
     }
     
     .footer-brand {
-        grid-column: 1 / span 2; /* Brand container occupies the top row completely */
         align-items: center;
         text-align: center;
     }
@@ -2047,48 +2091,26 @@ h1, h2, h3, h4, h5, h6 {
         transform: translateX(-50%);
     }
 
-    .footer-links, .footer-contact {
+    .footer-contact-horizontal {
+        display: flex;
+        justify-content: center;
         align-items: center;
         text-align: center;
-    }
-    
-    .footer-links a {
         font-size: 0.82rem !important;
-        white-space: nowrap !important;
-    }
-    
-    .contact-item {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 0.4rem;
-        width: 100%;
-    }
-    
-    .contact-item-icon {
-        margin-bottom: 0;
-        margin-top: 0;
-        display: flex;
-        align-items: center;
-        font-size: 0.95rem !important;
     }
 
-    .contact-item-text a {
-        font-size: 0.82rem !important; /* Re-scaled to prevent any side-by-side overlapping */
-        white-space: nowrap !important;
+    .footer-phone-link {
+        font-size: 0.82rem !important;
     }
 
     .footer {
         padding: 30px 0 85px 0 !important; /* Added 85px bottom padding so copyright is fully visible above sticky CTA footer */
     }
     
-    .footer-contact {
-        gap: 0.65rem !important;
-    }
-    
     .footer-bottom {
         padding-top: 1rem !important;
-        grid-column: 1 / span 2; /* Spans full grid width below the parallel columns */
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
     
     .footer-bottom p {
@@ -2461,8 +2483,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Header Trust Features */
 .header-trust-features {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     align-items: center;
+    flex-wrap: nowrap;
 }
 .header-trust-item {
     display: flex;
@@ -2824,6 +2847,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
     line-height: 1;
 }
+
+/* Custom premium SVG styling for Features Row cards */
+.feature-card-svg {
+    width: 56px;
+    height: 56px;
+    transition: transform var(--transition-normal), filter var(--transition-normal);
+}
+.features-row-card:hover .feature-card-svg {
+    transform: scale(1.1) translateY(-2px);
+    filter: drop-shadow(0 6px 12px rgba(16, 185, 129, 0.25));
+}
+
 .card-label {
     padding: 12px 14px;
     font-size: 0.88rem;
@@ -2987,6 +3022,7 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     z-index: 10;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-decoration: none;
 }
 .marker-icon-wrapper {
     position: relative;
@@ -3316,5 +3352,31 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 480px) {
     .features-row-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1025px) {
+    .hero-grid-desktop {
+        align-items: stretch;
+    }
+    .hero-content-desktop {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-height: max-content;
+        gap: 20px;
+    }
+    .hero-content-desktop .doctor-expert-card {
+        margin-top: auto;
+    }
+    .hero-form-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-height: max-content;
+        gap: 20px;
+    }
+    .hero-form-wrapper .trusted-ratings-card {
+        margin-top: auto;
     }
 }
