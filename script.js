@@ -52,7 +52,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     openLeadBtns.forEach(btn => {
-        btn.addEventListener('click', openLeadModal);
+        btn.addEventListener('click', function(e) {
+            const href = btn.getAttribute('href');
+            if (href && href.startsWith('#') && href.length > 1) {
+                if (window.innerWidth <= 1024) {
+                    e.preventDefault();
+                    openLeadModal();
+                }
+            } else {
+                e.preventDefault();
+                openLeadModal();
+            }
+        });
     });
 
     if (closeLeadModalBtn) closeLeadModalBtn.addEventListener('click', closeLeadModal);

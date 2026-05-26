@@ -12,7 +12,7 @@
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
     <!-- Local Stylesheet -->
-    <link href="styles.css?v=1.0.8" rel="stylesheet" />
+    <link href="styles.css?v=1.3.2" rel="stylesheet" />
 </head>
 
 <body>
@@ -28,9 +28,35 @@
 
             <!-- Header Right: DESKTOP ONLY -->
             <div class="header-right-desktop hidden-mobile">
-                <a href="#desktop-lead-form" class="btn btn-orange">
-                    Book Free Consultation
-                </a>
+                <div class="header-trust-features">
+                    <div class="header-trust-item">
+                        <div class="header-trust-icon-box">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <div class="header-trust-text">
+                            <span class="lbl">Best Price</span>
+                            <span class="val">Guarantee</span>
+                        </div>
+                    </div>
+                    <div class="header-trust-item">
+                        <div class="header-trust-icon-box">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="header-trust-text">
+                            <span class="lbl">Free</span>
+                            <span class="val">Audiology</span>
+                        </div>
+                    </div>
+                    <div class="header-trust-item">
+                        <div class="header-trust-icon-box">
+                            <i class="fas fa-shield-alt" style="color: var(--accent-green);"></i>
+                        </div>
+                        <div class="header-trust-text">
+                            <span class="lbl">100% Safe</span>
+                            <span class="val">&amp; Secure</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Header Right: MOBILE ONLY -->
@@ -73,20 +99,19 @@
     <section class="hero-section mobile-layout hidden-desktop">
         <div class="container">
             <h2 class="hero-title">
-                Better Hearing.<br />
-                Better Living.<br />
-                <span class="highlight">Better Price.</span>
+                Know Your<br />
+                <span class="highlight">Best Deal</span>
             </h2>
-            <p class="hero-desc">Advanced Hearing Aids at the Best Price in Chennai</p>
+            <p class="hero-desc">Get suggested hearing aids from our expert audiologists.</p>
 
             <div class="hero-bullets">
                 <div class="hero-bullet-item">
-                    <i class="fas fa-tag"></i>
-                    <span>Save up to ₹31,000/-</span>
+                    <i class="fas fa-tags"></i>
+                    <span>Best Price Guaranteed</span>
                 </div>
                 <div class="hero-bullet-item">
-                    <i class="fas fa-credit-card"></i>
-                    <span>0% EMI Options</span>
+                    <i class="fas fa-user-md"></i>
+                    <span>Expert Audiologists</span>
                 </div>
                 <div class="hero-bullet-item">
                     <i class="fas fa-home"></i>
@@ -103,6 +128,21 @@
                     <img alt="Hearing Aids Models" class="hero-platform-img" src="altair_front.png" />
                 </a>
             </div>
+
+            <!-- Lady Doctor Expert Card Mobile -->
+            <div class="doctor-expert-card">
+                <div class="doctor-expert-img-wrapper">
+                    <img src="lakshmi.png" alt="Clinical Audiologist" class="doctor-expert-img" />
+                </div>
+                <div class="doctor-expert-info">
+                    <h4>Talk to Our Expert Audiologists</h4>
+                    <ul class="doctor-expert-bullets">
+                        <li><i class="fas fa-check-circle"></i> Accurate trial of hearing needs.</li>
+                        <li><i class="fas fa-check-circle"></i> Professional advice for testing aids.</li>
+                        <li><i class="fas fa-check-circle"></i> Fitment and guidance check.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -112,20 +152,19 @@
             <!-- Left Info Column -->
             <div class="hero-content-desktop">
                 <h1 class="hero-title">
-                    Better Hearing.<br />
-                    Better Living.<br />
-                    <span class="highlight">Better Price.</span>
+                    Know Your<br />
+                    <span class="highlight">Best Deal</span>
                 </h1>
-                <p class="hero-desc">Advanced Hearing Aids at the Best Price in Chennai</p>
+                <p class="hero-desc">Get suggested hearing aids from our expert audiologists.</p>
 
                 <div class="hero-bullets-desktop">
                     <div class="hero-bullet-item">
-                        <i class="fas fa-tag"></i>
-                        <span>Save up to ₹31,000/-</span>
+                        <i class="fas fa-tags"></i>
+                        <span>Best Price Guaranteed</span>
                     </div>
                     <div class="hero-bullet-item">
-                        <i class="fas fa-credit-card"></i>
-                        <span>0% EMI Options</span>
+                        <i class="fas fa-user-md"></i>
+                        <span>Expert Audiologists</span>
                     </div>
                     <div class="hero-bullet-item">
                         <i class="fas fa-home"></i>
@@ -142,454 +181,424 @@
                         <img alt="Hearing Aids Models" class="hero-platform-img" src="altair_front.png" />
                     </a>
                 </div>
+
+                <!-- Lady Doctor Expert Card Desktop -->
+                <div class="doctor-expert-card">
+                    <div class="doctor-expert-img-wrapper">
+                        <img src="lakshmi.png" alt="Clinical Audiologist" class="doctor-expert-img" />
+                    </div>
+                    <div class="doctor-expert-info">
+                        <h4>Talk to Our Expert Audiologists</h4>
+                        <ul class="doctor-expert-bullets">
+                            <li><i class="fas fa-check-circle"></i> Accurate trial of hearing needs.</li>
+                            <li><i class="fas fa-check-circle"></i> Professional advice for testing aids.</li>
+                            <li><i class="fas fa-check-circle"></i> Fitment and guidance check.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <!-- Right Form Column -->
             <div class="hero-form-wrapper" id="desktop-lead-form">
                 <div class="hero-form-card">
-                    <h2>Schedule Visit</h2>
-                    <p class="form-subtitle">Confirm details to book your consultation</p>
+                    <div class="form-icon-circle-top">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h2>Get Your Best Price</h2>
+                    <p class="form-subtitle-highlighted">Estimate Now</p>
                     <form class="lead-generation-form">
                         <div class="form-group">
                             <label class="form-label">Full Name</label>
-                            <input class="form-input" placeholder="Enter your full name" type="text" required
-                                name="clientName" pattern="^[a-zA-Z\s]{3,50}$"
-                                oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
-                                title="Please enter a valid full name (minimum 3 characters, letters and spaces only)." />
+                            <div class="input-icon-wrapper">
+                                <i class="fas fa-user input-field-icon"></i>
+                                <input class="form-input" placeholder="Your Name" type="text" required
+                                    name="clientName" pattern="^[a-zA-Z\s]{3,50}$"
+                                    oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
+                                    title="Please enter a valid full name (minimum 3 characters, letters and spaces only)." />
+                            </div>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Phone Number</label>
-                            <input class="form-input" placeholder="10-digit mobile number" type="tel"
-                                pattern="^[6789][0-9]{9}$" maxlength="10"
-                                oninput="this.value = this.value.replace(/[^0-9]/g, '')" required name="clientPhone"
-                                title="Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9." />
+                            <div class="input-icon-wrapper">
+                                <i class="fas fa-phone-alt input-field-icon"></i>
+                                <input class="form-input" placeholder="Mobile Number" type="tel"
+                                    pattern="^[6789][0-9]{9}$" maxlength="10"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '')" required name="clientPhone"
+                                    title="Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9." />
+                            </div>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Pin Code</label>
-                            <input class="form-input" placeholder="6-digit pin code" type="text"
-                                pattern="^[1-9][0-9]{5}$" maxlength="6"
-                                oninput="this.value = this.value.replace(/[^0-9]/g, '')" required name="clientPincode"
-                                title="Please enter a valid 6-digit pin code (100000 to 999999)." />
+                            <div class="input-icon-wrapper">
+                                <i class="fas fa-map-marker-alt input-field-icon"></i>
+                                <input class="form-input" placeholder="Pincode" type="text"
+                                    pattern="^[1-9][0-9]{5}$" maxlength="6"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '')" required name="clientPincode"
+                                    title="Please enter a valid 6-digit pin code (100000 to 999999)." />
+                            </div>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Primary Hearing Concern</label>
-                            <select class="form-select" required name="clientConcern">
-                                <option value="" disabled selected>Select your concern</option>
-                                <option value="Difficulty understanding speech in noise">Difficulty in noisy
-                                    environments</option>
-                                <option value="Tinnitus (ringing in the ears)">Tinnitus / Ringing in ears</option>
-                                <option value="Age-related gradual hearing loss">Age-related hearing loss</option>
-                                <option value="Looking to upgrade existing hearing aid">Upgrading existing device
-                                </option>
-                                <option value="Booking for a parent or family member">Consultation for family member
-                                </option>
-                                <option value="General check-up / routine screening">General hearing screening</option>
-                            </select>
+                            <div class="input-icon-wrapper">
+                                <i class="fas fa-question-circle input-field-icon"></i>
+                                <select class="form-select" required name="clientConcern">
+                                    <option value="" disabled selected>Select your concern</option>
+                                    <option value="Difficulty understanding speech in noise">Difficulty in noisy
+                                        environments</option>
+                                    <option value="Tinnitus (ringing in the ears)">Tinnitus / Ringing in ears</option>
+                                    <option value="Age-related gradual hearing loss">Age-related hearing loss</option>
+                                    <option value="Looking to upgrade existing hearing aid">Upgrading existing device
+                                    </option>
+                                    <option value="Booking for a parent or family member">Consultation for family member
+                                    </option>
+                                    <option value="General check-up / routine screening">General hearing screening</option>
+                                </select>
+                            </div>
                         </div>
 
-                        <label class="form-checkbox-label">
-                            <input type="checkbox" checked required name="whatsappOptIn" />
-                            <span>Receive appointment details &amp; special offers on <i class="fab fa-whatsapp"></i>
-                                WhatsApp</span>
-                        </label>
+                        <div class="form-whatsapp-optin-strip">
+                            <div class="whatsapp-badge-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <label class="form-checkbox-label">
+                                <input type="checkbox" checked required name="whatsappOptIn" />
+                                <span>Receive appointment details &amp; updates on WhatsApp</span>
+                            </label>
+                        </div>
 
                         <button class="btn btn-submit" type="submit">
-                            Schedule Free Visit <i class="fas fa-arrow-right"></i>
+                            Get My Best Deal <i class="fas fa-shield-alt"></i>
                         </button>
+                        <p class="form-disclaimer">
+                            By proceeding, you authorize Altair Hearing Revolution Chennai to contact you via WhatsApp, SMS,
+                            RCS &amp; Email. View our Privacy Policy.
+                        </p>
                     </form>
-                    <p class="form-disclaimer">
-                        By proceeding, you authorize Altair Hearing Revolution Chennai to contact you via WhatsApp, SMS,
-                        RCS &amp; Email. View our Privacy Policy.
-                    </p>
+                </div>
+
+                <!-- Trusted by Thousands Ratings directly under form card -->
+                <div class="trusted-ratings-card">
+                    <h3 class="trusted-title">Trusted by Thousands</h3>
+                    <div class="trusted-metrics-grid">
+                        <div class="trusted-metric-item">
+                            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="trusted-logo" />
+                            <div class="trusted-stars">
+                                <span class="rating-val">4.8</span>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                            <span class="lbl">2000+ Reviews</span>
+                        </div>
+                        <div class="trusted-metric-item">
+                            <div class="trustpilot-lbl"><i class="fas fa-star" style="color: #00b67a;"></i> Trustpilot</div>
+                            <div class="trusted-stars">
+                                <span class="rating-val">4.7</span>
+                                <div class="trustpilot-star-boxes">
+                                    <span class="star-box"><i class="fas fa-star"></i></span>
+                                    <span class="star-box"><i class="fas fa-star"></i></span>
+                                    <span class="star-box"><i class="fas fa-star"></i></span>
+                                    <span class="star-box"><i class="fas fa-star"></i></span>
+                                    <span class="star-box inactive"><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                            <span class="lbl">TrustScore</span>
+                        </div>
+                        <div class="trusted-metric-item flex-row-item">
+                            <div class="happy-icon-box"><i class="fas fa-user-friends"></i></div>
+                            <div class="happy-txt">
+                                <strong>15,000+</strong>
+                                <span>Happy Customers</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== SOCIAL PROOF BAR ==================== -->
-    <section class="social-proof-section">
-        <div class="container social-proof-grid">
-            <!-- Google rating -->
-            <div class="social-proof-item">
-                <img alt="Google Rating" class="social-proof-logo"
-                    src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" />
-                <div class="social-proof-rating">
-                    <div class="rating-row">
-                        <span class="rating-number">4.8</span>
-                        <div class="social-proof-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <span class="rating-lbl">2000+ Reviews</span>
-                </div>
-            </div>
-
-            <!-- Trustpilot rating -->
-            <div class="social-proof-item">
-                <div
-                    style="font-weight: 800; font-size: 1.25rem; display: flex; align-items: center; gap: 4px; color: #1e293b;">
-                    <i class="fas fa-star" style="color: #00b67a; font-size: 1.4rem;"></i> Trustpilot
-                </div>
-                <div class="social-proof-rating">
-                    <div class="rating-row">
-                        <span class="rating-number">4.7</span>
-                        <div class="trustpilot-stars">
-                            <span class="trustpilot-star-square"><i class="fas fa-star"></i></span>
-                            <span class="trustpilot-star-square"><i class="fas fa-star"></i></span>
-                            <span class="trustpilot-star-square"><i class="fas fa-star"></i></span>
-                            <span class="trustpilot-star-square"><i class="fas fa-star"></i></span>
-                            <span class="trustpilot-star-square" style="background-color: #dcdcdc; color: #a1a1a1;"><i
-                                    class="fas fa-star"></i></span>
-                        </div>
-                    </div>
-                    <span class="rating-lbl">TrustScore</span>
-                </div>
-            </div>
-
-            <!-- Customers Count -->
-            <div class="social-proof-item">
-                <div class="happy-customers-icon">
-                    <i class="fas fa-user-friends"></i>
-                </div>
-                <div class="happy-customers-txt">
-                    <span>Trusted by</span>
-                    <strong>15,000+</strong>
-                    <span>Happy Customers</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== WHY CHOOSE US ==================== -->
-    <section class="why-choose-section" id="why-choose">
+    <!-- ==================== FEATURES ROW SECTION ==================== -->
+    <section class="features-row-section" id="features-row">
         <div class="container">
-            <div class="section-title-wrapper">
-                <span class="section-tag">Why Choose Altair?</span>
-                <!-- Responsive heading text mapping -->
-                <h2 class="section-title hidden-desktop">Why Choose Altair?</h2>
-                <h2 class="section-title hidden-mobile">Why Choose Altair Hearing Revolution Chennai?</h2>
+            <div class="section-title-wrapper-centered">
+                <h2 class="section-title-centered">Why Choose Altair Chennai?</h2>
             </div>
-
-            <div class="why-choose-grid">
+            
+            <div class="features-row-grid">
                 <!-- Card 1 -->
-                <div class="why-choose-card">
-                    <div class="why-choose-icon-circle">
-                        <i class="fas fa-rupee-sign"></i>
+                <div class="features-row-card">
+                    <div class="card-icon-wrapper color-teal">
+                        <i class="fas fa-user-md"></i>
                     </div>
-                    <h3>Transparent<br />Pricing</h3>
+                    <div class="card-label">Certified Audiologists For You</div>
                 </div>
                 <!-- Card 2 -->
-                <div class="why-choose-card">
-                    <div class="why-choose-icon-circle">
-                        <i class="fas fa-clinic-medical"></i>
+                <div class="features-row-card">
+                    <div class="card-icon-wrapper color-blue">
+                        <i class="fas fa-microchip"></i>
                     </div>
-                    <h3>1000+ Certified<br />Clinics in India</h3>
+                    <div class="card-label">Latest Technology Hearing Aids</div>
                 </div>
                 <!-- Card 3 -->
-                <div class="why-choose-card">
-                    <div class="why-choose-icon-circle">
-                        <i class="fas fa-shield-alt"></i>
+                <div class="features-row-card">
+                    <div class="card-icon-wrapper color-green">
+                        <i class="fas fa-house-user"></i>
                     </div>
-                    <h3>Protection+ Plan<br />Against Loss, Theft<br />or Damage</h3>
+                    <div class="card-label">Free Home Trial Before You Buy</div>
                 </div>
                 <!-- Card 4 -->
-                <div class="why-choose-card">
-                    <div class="why-choose-icon-circle">
-                        <i class="fas fa-headset"></i>
+                <div class="features-row-card">
+                    <div class="card-icon-wrapper color-purple">
+                        <i class="fas fa-file-waveform"></i>
                     </div>
-                    <h3>Lifetime<br />Hearing Care<br />Support</h3>
+                    <div class="card-label">Digital Testing / Trial Centre</div>
                 </div>
                 <!-- Card 5 -->
-                <div class="why-choose-card">
-                    <div class="why-choose-icon-circle">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h3>40+ Lacs<br />Consultations<br />Across India</h3>
-                </div>
-                <!-- Card 6 -->
-                <div class="why-choose-card">
-                    <div class="why-choose-icon-circle">
-                        <i class="fas fa-percentage"></i>
-                    </div>
-                    <h3>Interest Free<br />Easy EMI Plans</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== EXCLUSIVE OFFERS BANNER ==================== -->
-    <section class="exclusive-offers-section" id="exclusive-offers">
-        <div class="container">
-            <div class="exclusive-offers-banner">
-                <div class="offers-header">
-                    <h2>Exclusive Offers – For You</h2>
-                </div>
-                <div class="offers-grid">
-                    <!-- Offer 1 -->
-                    <div class="offer-item">
-                        <div class="offer-icon-wrapper">
+                <div class="features-row-card">
+                    <div class="card-icon-wrapper color-orange">
+                        <div class="emi-graphic">
                             <i class="fas fa-rupee-sign"></i>
-                        </div>
-                        <div class="offer-text-wrapper">
-                            <span class="offer-lbl">Save up to</span>
-                            <span class="offer-val">₹31,000/-</span>
+                            <span class="pct">0%</span>
                         </div>
                     </div>
-                    <!-- Offer 2 -->
-                    <div class="offer-item">
-                        <div class="offer-icon-wrapper">
-                            <i class="fas fa-credit-card"></i>
-                        </div>
-                        <div class="offer-text-wrapper">
-                            <span class="offer-lbl">0% EMI</span>
-                            <span class="offer-val">Options</span>
-                        </div>
-                    </div>
-                    <!-- Offer 3 -->
-                    <div class="offer-item">
-                        <div class="offer-icon-wrapper">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="offer-text-wrapper">
-                            <span class="offer-lbl">Free</span>
-                            <span class="offer-val">Home Trial</span>
-                        </div>
-                    </div>
-                    <!-- Offer 4 -->
-                    <div class="offer-item">
-                        <div class="offer-icon-wrapper">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div class="offer-text-wrapper">
-                            <span class="offer-lbl">Up to 4 Years</span>
-                            <span class="offer-val">Warranty</span>
-                        </div>
-                    </div>
+                    <div class="card-label">Easy Installment Interest Free EMI</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== PRODUCT SHOWCASE SECTION ==================== -->
-    <section class="products-section" id="products">
+    <!-- ==================== SPLIT COLUMNS SECTION ==================== -->
+    <section class="split-columns-section">
+        <div class="container split-columns-grid">
+            <!-- Left Column: Why Choose Altair Chennai? -->
+            <div class="split-column-left">
+                <h2 class="column-title">Why Choose Altair Chennai?</h2>
+                <div class="split-list-items">
+                    <div class="split-list-item">
+                        <div class="split-item-icon-wrapper">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <div class="split-item-text">
+                            <h3>Special Elder Care</h3>
+                            <p>Personalized care and patience for every senior.</p>
+                        </div>
+                    </div>
+                    <div class="split-list-item">
+                        <div class="split-item-icon-wrapper">
+                            <i class="fas fa-children"></i>
+                        </div>
+                        <div class="split-item-text">
+                            <h3>Children Friendly</h3>
+                            <p>Gentle, friendly &amp; comfortable hearing care for children.</p>
+                        </div>
+                    </div>
+                    <div class="split-list-item">
+                        <div class="split-item-icon-wrapper">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="split-item-text">
+                            <h3>After-Sales Care</h3>
+                            <p>We are with you always, for a lifetime of support.</p>
+                        </div>
+                    </div>
+                    <div class="split-list-item">
+                        <div class="split-item-icon-wrapper">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="split-item-text">
+                            <h3>Preferred by 1 Lac+ Customers</h3>
+                            <p>Trusted by lakhs of happy hearing aid users.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Advanced Hearing Aids For Every Need -->
+            <div class="split-column-right">
+                <h2 class="column-title">Advanced Hearing Aids For Every Need</h2>
+                <div class="split-list-items">
+                    <!-- Device 1: BTE -->
+                    <a href="#desktop-lead-form" class="split-list-item open-lead-modal-btn">
+                        <div class="split-product-photo-wrapper">
+                            <img src="device1.png" alt="Behind-The-Ear (BTE)" class="split-product-photo" />
+                        </div>
+                        <div class="split-item-text">
+                            <h3>Behind-The-Ear (BTE)</h3>
+                            <p>Powerful &amp; suitable for all levels of hearing loss.</p>
+                        </div>
+                    </a>
+                    <!-- Device 2: RIC -->
+                    <a href="#desktop-lead-form" class="split-list-item open-lead-modal-btn">
+                        <div class="split-product-photo-wrapper">
+                            <img src="device2.png" alt="Receiver-In-Canal (RIC)" class="split-product-photo" />
+                        </div>
+                        <div class="split-item-text">
+                            <h3>Receiver-In-Canal (RIC)</h3>
+                            <p>Small, discreet &amp; comfortable.</p>
+                        </div>
+                    </a>
+                    <!-- Device 3: ITC -->
+                    <a href="#desktop-lead-form" class="split-list-item open-lead-modal-btn">
+                        <div class="split-product-photo-wrapper">
+                            <img src="device3.png" alt="In-The-Canal (ITC)" class="split-product-photo" />
+                        </div>
+                        <div class="split-item-text">
+                            <h3>In-The-Canal (ITC)</h3>
+                            <p>Custom-fit &amp; nearly invisible.</p>
+                        </div>
+                    </a>
+                    <!-- Device 4: Rechargeable -->
+                    <a href="#desktop-lead-form" class="split-list-item open-lead-modal-btn">
+                        <div class="split-product-photo-wrapper">
+                            <img src="device4.png" alt="Rechargeable Hearing Aids" class="split-product-photo" />
+                        </div>
+                        <div class="split-item-text">
+                            <h3>Rechargeable Hearing Aids</h3>
+                            <p>Hassle-free charging for all-day use.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVING CHENNAI MAP SECTION ==================== -->
+    <section class="serving-chennai-section" id="serving-chennai">
         <div class="container">
-            <div class="section-title-wrapper">
-                <span class="section-tag">Authorized Signia Portfolio</span>
-                <h2 class="section-title">Explore Advanced Hearing Aids</h2>
-                <p class="section-desc">Experience next-generation sound quality. Learn about our range of
-                    Behind-The-Ear (BTE), Receiver-In-Canal (RIC) and Completely-In-Canal (CIC) options.</p>
-            </div>
+            <h2 class="section-title-centered text-center" style="margin-bottom: 40px; text-align: center;">Proudly Serving Chennai</h2>
+            <div class="serving-chennai-grid">
+                <!-- Interactive Map on the Left -->
+                <div class="chennai-map-wrapper">
+                    <div class="chennai-map-container">
+                        <img src="Map.png" alt="Chennai Map" class="chennai-map-img" />
+                        
+                        <!-- Vadapalani (Top-Left) -->
+                        <div class="map-marker-pin" style="left: 32.9%; top: 18.4%;">
+                            <div class="marker-icon-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="marker-pulse-glow"></div>
+                            </div>
+                            <span class="marker-label label-left">Vadapalani</span>
+                        </div>
+                        
+                        <!-- Adambakkam (Middle-Left) -->
+                        <div class="map-marker-pin" style="left: 32.9%; top: 40.0%;">
+                            <div class="marker-icon-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="marker-pulse-glow"></div>
+                            </div>
+                            <span class="marker-label label-left">Adambakkam</span>
+                        </div>
+                        
+                        <!-- Porur (Bottom-Left) -->
+                        <div class="map-marker-pin" style="left: 31.3%; top: 64.2%;">
+                            <div class="marker-icon-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="marker-pulse-glow"></div>
+                            </div>
+                            <span class="marker-label label-left">Porur</span>
+                        </div>
+                        
+                        <!-- Saligramam (Top-Right) -->
+                        <div class="map-marker-pin" style="left: 61.1%; top: 17.8%;">
+                            <div class="marker-icon-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="marker-pulse-glow"></div>
+                            </div>
+                            <span class="marker-label label-right">Saligramam</span>
+                        </div>
+                        
+                        <!-- Mandaveli (Middle-Right) -->
+                        <div class="map-marker-pin" style="left: 64.2%; top: 44.9%;">
+                            <div class="marker-icon-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="marker-pulse-glow"></div>
+                            </div>
+                            <span class="marker-label label-right">Mandaveli</span>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="products-grid">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <span class="product-badge">Premium Design</span>
-                    <div class="product-img-wrapper">
-                        <img src="img1.png" alt="Styletto IX" class="product-img" />
-                    </div>
-                    <div class="product-details">
-                        <span class="product-type">Receiver-In-Canal (RIC)</span>
-                        <h3 class="product-title">Styletto IX</h3>
-                        <p class="product-desc">An ultra-slim, sleek hearing aid designed like high-end eyewear.
-                            Delivers incredible speech clarity in noisy group conversations.</p>
-                        <div class="product-cta-wrapper">
-                            <button class="btn btn-orange open-lead-modal-btn hidden-desktop">Book Now</button>
-                            <a href="#desktop-lead-form" class="btn btn-orange hidden-mobile">Book Now</a>
+                <!-- 2x2 Feature Grid on the Right -->
+                <div class="serving-benefits-grid">
+                    <!-- Feature 1: Best Price Guaranteed -->
+                    <div class="serving-benefit-item">
+                        <div class="benefit-icon-circle">
+                            <!-- Shield SVG -->
+                            <svg class="main-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            <!-- Checkmark SVG -->
+                            <svg class="sub-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
                         </div>
+                        <h3>Best Price Guaranteed</h3>
+                        <p>Lowest prices on all leading brands.</p>
                     </div>
-                </div>
 
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <span class="product-badge popular-badge">Most Popular</span>
-                    <div class="product-img-wrapper">
-                        <img src="img2.png" alt="Pure Charge & Go IX" class="product-img" />
-                    </div>
-                    <div class="product-details">
-                        <span class="product-type">Receiver-In-Canal (RIC)</span>
-                        <h3 class="product-title">Pure Charge & Go IX</h3>
-                        <p class="product-desc">Small, elegant and highly discreet. Equipped with Bluetooth streaming,
-                            smart AI control and an exceptional long-life rechargeable cell.</p>
-                        <div class="product-cta-wrapper">
-                            <button class="btn btn-orange open-lead-modal-btn hidden-desktop">Book Now</button>
-                            <a href="#desktop-lead-form" class="btn btn-orange hidden-mobile">Book Now</a>
+                    <!-- Feature 2: Expert Audiologists -->
+                    <div class="serving-benefit-item">
+                        <div class="benefit-icon-circle">
+                            <!-- User Outline SVG -->
+                            <svg class="main-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <!-- Star SVG -->
+                            <svg class="sub-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
                         </div>
+                        <h3>Expert Audiologists</h3>
+                        <p>Certified professionals with personalized care.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ==================== TESTIMONIALS SECTION ==================== -->
-    <section class="testimonials-section" id="testimonials">
-        <div class="container">
-            <div class="testimonials-header" style="justify-content: center; text-align: center;">
-                <div class="testimonials-header-left">
-                    <span class="section-tag">Reviews</span>
-                    <h2 class="section-title">What Our Chennai Customers Say</h2>
-                </div>
-            </div>
+                    <!-- Feature 3: Free Home Trial -->
+                    <div class="serving-benefit-item">
+                        <div class="benefit-icon-circle">
+                            <!-- House Outline SVG -->
+                            <svg class="main-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            <!-- Heart SVG -->
+                            <svg class="sub-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h3>Free Home Trial</h3>
+                        <p>Try hearing aids at home before you decide.</p>
+                    </div>
 
-            <!-- MOBILE CAROUSEL: visible only on mobile -->
-            <div class="carousel-outer-container hidden-desktop">
-                <div class="carousel-viewport" id="carousel-viewport">
-                    <div class="carousel-track" id="carousel-track">
-                        <!-- Slide 1 -->
-                        <div class="carousel-slide">
-                            <div class="testimonial-card-mobile">
-                                <div class="testimonial-mobile-top">
-                                    <div class="testimonial-mobile-meta">
-                                        <span class="testimonial-mobile-name">R. Krishnan</span>
-                                        <span class="testimonial-mobile-location">T. Nagar, Chennai</span>
-                                    </div>
-                                </div>
-                                <p class="testimonial-mobile-quote">"After visiting several hearing clinics in Chennai,
-                                    I chose Altair. The sound is incredibly clear now and the device is very
-                                    comfortable. Outstanding audiology experts!"</p>
-                                <div class="testimonial-mobile-stars">
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i>
-                                </div>
-                            </div>
+                    <!-- Feature 4: Up to 4 Years Warranty -->
+                    <div class="serving-benefit-item">
+                        <div class="benefit-icon-circle">
+                            <!-- Shield Outline SVG -->
+                            <svg class="main-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            <!-- Styled Number '4' -->
+                            <span class="sub-number">4</span>
                         </div>
-                        <!-- Slide 2 -->
-                        <div class="carousel-slide">
-                            <div class="testimonial-card-mobile">
-                                <div class="testimonial-mobile-top">
-                                    <div class="testimonial-mobile-meta">
-                                        <span class="testimonial-mobile-name">Meena S.</span>
-                                        <span class="testimonial-mobile-location">Velachery, Chennai</span>
-                                    </div>
-                                </div>
-                                <p class="testimonial-mobile-quote">"The 100% free home trial was excellent. Now I can
-                                    talk to my grandkids happily and hear every word clearly. High quality care and
-                                    lifetime support!"</p>
-                                <div class="testimonial-mobile-stars">
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slide 3 -->
-                        <div class="carousel-slide">
-                            <div class="testimonial-card-mobile">
-                                <div class="testimonial-mobile-top">
-                                    <div class="testimonial-mobile-meta">
-                                        <span class="testimonial-mobile-name">Suresh B.</span>
-                                        <span class="testimonial-mobile-location">Adyar, Chennai</span>
-                                    </div>
-                                </div>
-                                <p class="testimonial-mobile-quote">"Excellent professional service and very fair,
-                                    transparent pricing. The digital hearing check was extremely thorough. Highly
-                                    recommended centre!"</p>
-                                <div class="testimonial-mobile-stars">
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slide 4 -->
-                        <div class="carousel-slide">
-                            <div class="testimonial-card-mobile">
-                                <div class="testimonial-mobile-top">
-                                    <div class="testimonial-mobile-meta">
-                                        <span class="testimonial-mobile-name">Indira R.</span>
-                                        <span class="testimonial-mobile-location">Ambattur, Chennai</span>
-                                    </div>
-                                </div>
-                                <p class="testimonial-mobile-quote">"Being able to test the invisible hearing aid in my
-                                    daily environment made all the difference. Outstanding customer support throughout
-                                    the process!"</p>
-                                <div class="testimonial-mobile-stars">
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel dots indicators -->
-                <div class="carousel-dots" id="carousel-dots-container">
-                    <span class="carousel-dot active" data-index="0"></span>
-                    <span class="carousel-dot" data-index="1"></span>
-                    <span class="carousel-dot" data-index="2"></span>
-                    <span class="carousel-dot" data-index="3"></span>
-                </div>
-            </div>
-
-            <!-- DESKTOP GRID: visible only on desktop -->
-            <div class="testimonials-grid-desktop hidden-mobile grid">
-                <!-- Card 1 -->
-                <div class="testimonial-card-desktop">
-                    <div class="testimonial-desktop-body">
-                        <p class="testimonial-desktop-quote">"After visiting several hearing clinics in Chennai, I chose
-                            Altair. I can hear conversations clearly now, even in noisy environments. The professional
-                            audiologists here gave me the best digital hearing aid solution for my needs!"</p>
-                        <div class="testimonial-desktop-meta">
-                            <span class="testimonial-desktop-name">Lakshmi S.</span>
-                            <div class="testimonial-desktop-location">Adyar, Chennai</div>
-                            <div class="testimonial-desktop-stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="testimonial-card-desktop">
-                    <div class="testimonial-desktop-body">
-                        <p class="testimonial-desktop-quote">"Excellent audiology diagnostics and very transparent
-                            pricing on all top hearing aid brands. The free clinical hearing assessment at the Anna
-                            Nagar clinic was extremely thorough. Highly recommended!"</p>
-                        <div class="testimonial-desktop-meta">
-                            <span class="testimonial-desktop-name">Ramesh K.</span>
-                            <div class="testimonial-desktop-location">Anna Nagar, Chennai</div>
-                            <div class="testimonial-desktop-stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="testimonial-card-desktop">
-                    <div class="testimonial-desktop-body">
-                        <p class="testimonial-desktop-quote">"The 100% free home trial helped me choose the right
-                            invisible hearing aid. Being able to test the device in my daily environment in Velachery
-                            made all the difference. Outstanding customer care!"</p>
-                        <div class="testimonial-desktop-meta">
-                            <span class="testimonial-desktop-name">Meena V.</span>
-                            <div class="testimonial-desktop-location">Velachery, Chennai</div>
-                            <div class="testimonial-desktop-stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="testimonial-card-desktop">
-                    <div class="testimonial-desktop-body">
-                        <p class="testimonial-desktop-quote">"The ongoing support, free tuning sessions and lifetime
-                            hearing care from Altair are outstanding. Combined with the best hearing aid price in
-                            Chennai, they are the go-to audiology experts."</p>
-                        <div class="testimonial-desktop-meta">
-                            <span class="testimonial-desktop-name">Suresh B.</span>
-                            <div class="testimonial-desktop-location">T. Nagar, Chennai</div>
-                            <div class="testimonial-desktop-stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                        </div>
+                        <h3>Up to 4 Years Warranty</h3>
+                        <p>Extended warranty on selected models.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ==================== BOTTOM FOOTER STRIP ==================== -->
+    <div class="bottom-footer-strip">
+        <div class="container footer-strip-flex">
+            <div class="strip-left">
+                <i class="fas fa-headset"></i>
+                <span>We are with you, always.</span>
+            </div>
+            <div class="strip-right">
+                <span>Your Hearing, Our Priority.</span>
+            </div>
+        </div>
+    </div>
 
     <!-- ==================== BRANDS PARTNERS SECTION ==================== -->
     <section class="brands-section" id="brands">
@@ -799,47 +808,63 @@
 
     <!-- ==================== LEAD CAPTURE MODAL (FOR MOBILE BUTTON CLICK) ==================== -->
     <div class="success-modal" id="lead-modal">
-        <div class="success-modal-card matched-form-card" style="text-align: left;">
+        <div class="success-modal-card matched-form-card" style="text-align: left; position: relative;">
+            <div class="form-icon-circle-top">
+                <i class="fas fa-headset"></i>
+            </div>
             <div class="drawer-header"
-                style="margin-bottom: 20px; border-bottom: 1px solid rgba(0,0,0,0.06); padding-bottom: 15px;">
-                <h3 style="font-size: 1.35rem; color: var(--primary-blue-dark);">Schedule Visit</h3>
+                style="margin-bottom: 12px; border-bottom: 1px solid rgba(0,0,0,0.06); padding-bottom: 10px;">
+                <h3 style="font-size: 1.4rem; color: var(--primary-blue-dark); text-align: center; width: 100%;">Get Your Best Price</h3>
                 <button class="drawer-close-btn" id="lead-modal-close" aria-label="Close Form"
-                    style="color: var(--text-muted);">
+                    style="color: var(--text-muted); position: absolute; right: 20px; top: 20px;">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
+            <p style="color: var(--accent-green); font-weight: 800; font-size: 1.15rem; margin-top: 2px; margin-bottom: 20px; text-align: center; text-transform: none; letter-spacing: normal;">Estimate Now</p>
             <form class="lead-generation-form">
                 <div class="form-group">
                     <label class="form-label">Full Name</label>
-                    <input class="form-input" placeholder="Enter your full name" type="text" required name="clientName"
-                        pattern="^[a-zA-Z\s]{3,50}$" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
-                        title="Please enter a valid full name (minimum 3 characters, letters and spaces only)." />
+                    <div class="input-icon-wrapper">
+                        <i class="fas fa-user input-field-icon"></i>
+                        <input class="form-input" placeholder="Your Name" type="text" required name="clientName"
+                            pattern="^[a-zA-Z\s]{3,50}$" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
+                            title="Please enter a valid full name (minimum 3 characters, letters and spaces only)." />
+                    </div>
                 </div>
                 <div class="form-group">
                     <label class="form-label">Phone Number</label>
-                    <input class="form-input" placeholder="10-digit mobile number" type="tel" pattern="^[6789][0-9]{9}$"
-                        maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
-                        name="clientPhone"
-                        title="Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9." />
+                    <div class="input-icon-wrapper">
+                        <i class="fas fa-phone-alt input-field-icon"></i>
+                        <input class="form-input" placeholder="Mobile Number" type="tel" pattern="^[6789][0-9]{9}$"
+                            maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
+                            name="clientPhone"
+                            title="Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9." />
+                    </div>
                 </div>
                 <div class="form-group">
                     <label class="form-label">Pin Code</label>
-                    <input class="form-input" placeholder="6-digit pin code" type="text" pattern="^[1-9][0-9]{5}$"
-                        maxlength="6" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
-                        name="clientPincode" title="Please enter a valid 6-digit pin code (100000 to 999999)." />
+                    <div class="input-icon-wrapper">
+                        <i class="fas fa-map-marker-alt input-field-icon"></i>
+                        <input class="form-input" placeholder="Pincode" type="text" pattern="^[1-9][0-9]{5}$"
+                            maxlength="6" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
+                            name="clientPincode" title="Please enter a valid 6-digit pin code (100000 to 999999)." />
+                    </div>
                 </div>
                 <div class="form-group">
                     <label class="form-label">Primary Hearing Concern</label>
-                    <select class="form-select" required name="clientConcern">
-                        <option value="" disabled selected>Select your concern</option>
-                        <option value="Difficulty understanding speech in noise">Difficulty in noisy environments
-                        </option>
-                        <option value="Tinnitus (ringing in the ears)">Tinnitus / Ringing in ears</option>
-                        <option value="Age-related gradual hearing loss">Age-related hearing loss</option>
-                        <option value="Looking to upgrade existing hearing aid">Upgrading existing device</option>
-                        <option value="Booking for a parent or family member">Consultation for family member</option>
-                        <option value="General check-up / routine screening">General hearing screening</option>
-                    </select>
+                    <div class="input-icon-wrapper">
+                        <i class="fas fa-question-circle input-field-icon"></i>
+                        <select class="form-select" required name="clientConcern">
+                            <option value="" disabled selected>Select your concern</option>
+                            <option value="Difficulty understanding speech in noise">Difficulty in noisy environments
+                            </option>
+                            <option value="Tinnitus (ringing in the ears)">Tinnitus / Ringing in ears</option>
+                            <option value="Age-related gradual hearing loss">Age-related hearing loss</option>
+                            <option value="Looking to upgrade existing hearing aid">Upgrading existing device</option>
+                            <option value="Booking for a parent or family member">Consultation for family member</option>
+                            <option value="General check-up / routine screening">General hearing screening</option>
+                        </select>
+                    </div>
                 </div>
 
                 <label class="form-checkbox-label">
@@ -848,7 +873,7 @@
                 </label>
 
                 <button class="btn btn-submit" type="submit" style="width: 100%;">
-                    Schedule Free Visit <i class="fas fa-arrow-right"></i>
+                    Get My Best Deal <i class="fas fa-shield-alt"></i>
                 </button>
             </form>
         </div>
@@ -868,7 +893,7 @@
     </div>
 
     <!-- Local Script -->
-    <script src="script.js?v=1.0.8"></script>
+    <script src="script.js?v=1.3.2"></script>
 </body>
 
 </html>
