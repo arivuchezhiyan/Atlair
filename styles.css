@@ -552,7 +552,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Desktop Hero Layout */
 .hero-section.desktop-layout {
     background: var(--bg-blue-gradient);
-    padding: 40px 0;
+    padding: 20px 0 10px 0; /* Minimized top/bottom padding to bring everything upward! */
     position: relative;
 }
 .hero-section.desktop-layout::before {
@@ -1676,7 +1676,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sticky-footer-btn.appointment {
-    background-color: #ff7800; /* Keep custom orange to align with three-color mobile bar */
+    background-color: #ff7800; /* Custom orange strictly for the mobile sticky footer Enquiry button */
 }
 
 .sticky-footer-btn.appointment:hover,
@@ -1904,22 +1904,42 @@ h1, h2, h3, h4, h5, h6 {
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    margin-bottom: 2.5rem;
+    gap: 2.5rem;
+    margin-bottom: 1.5rem;
     align-items: center;
 }
 
 .footer-brand {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
 }
 
-.footer-brand p {
-    color: rgba(255, 255, 255, 0.6);
-    margin-top: 1.25rem;
-    font-size: 0.95rem;
-    line-height: 1.6;
+.footer-logo-badge {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 6px 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-sm);
+    flex-shrink: 0;
+}
+
+.footer-logo-img {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.footer-partner-text {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.3;
 }
 
 .footer-column {
@@ -1931,7 +1951,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     font-size: 1.15rem;
     font-weight: 700;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1rem;
     position: relative;
     padding-bottom: 0.5rem;
     text-transform: uppercase;
@@ -2063,20 +2083,33 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .footer-brand {
-        align-items: center;
-        text-align: center;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        width: 100% !important;
+        text-align: left !important;
     }
     
-    .footer-brand p {
-        text-align: center;
-        margin-top: 0.75rem !important;
-        margin-bottom: 0.75rem !important;
-        font-size: 0.82rem !important;
-        line-height: 1.5 !important;
+    .footer-logo-badge {
+        padding: 4px 10px !important;
+        border-radius: 6px !important;
+        margin: 0 !important;
+        box-shadow: var(--shadow-sm) !important;
     }
     
-    .footer-brand .logo-img {
-        max-height: 36px !important;
+    .footer-logo-img {
+        height: 20px !important;
+    }
+    
+    .footer-partner-text {
+        font-size: 0.76rem !important;
+        color: rgba(255, 255, 255, 0.95) !important;
+        text-align: left !important;
+        line-height: 1.25 !important;
+        max-width: 180px !important;
+        white-space: normal !important;
     }
     
     .footer-title {
@@ -3219,8 +3252,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 576px) {
     .serving-benefits-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px 10px !important;
+    }
+    .serving-benefit-item {
+        padding: 0 4px;
+    }
+    .benefit-icon-circle {
+        width: 60px !important;
+        height: 60px !important;
+        margin-bottom: 10px !important;
+    }
+    .benefit-icon-circle .main-icon {
+        width: 28px !important;
+        height: 28px !important;
+    }
+    .benefit-icon-circle .sub-icon {
+        width: 12px !important;
+        height: 12px !important;
+    }
+    .serving-benefit-item:nth-child(2) .sub-icon {
+        bottom: 16px !important;
+        right: 16px !important;
+    }
+    .serving-benefit-item:nth-child(3) .sub-icon {
+        bottom: 18px !important;
+    }
+    .benefit-icon-circle .sub-number {
+        font-size: 0.72rem !important;
+    }
+    .serving-benefit-item h3 {
+        font-size: 0.8rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 4px !important;
+    }
+    .serving-benefit-item p {
+        font-size: 0.65rem !important;
+        line-height: 1.3 !important;
+        max-width: none !important;
     }
 }
 
@@ -3304,6 +3373,40 @@ h1, h2, h3, h4, h5, h6 {
     }
     .column-title {
         font-size: 1.45rem;
+        margin-bottom: 20px !important;
+        text-align: center;
+    }
+    .split-list-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+    .split-list-item {
+        flex-direction: column !important;
+        text-align: center !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        padding: 16px 8px !important;
+        min-height: 155px !important;
+    }
+    .split-item-icon-wrapper {
+        width: 44px !important;
+        height: 44px !important;
+        font-size: 1.1rem !important;
+    }
+    .split-product-photo-wrapper {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .split-item-text h3 {
+        font-size: 0.8rem !important;
+        margin-bottom: 3px !important;
+        line-height: 1.25 !important;
+    }
+    .split-item-text p {
+        font-size: 0.65rem !important;
+        line-height: 1.3 !important;
     }
     .chennai-map-wrapper {
         padding: 0;
@@ -3369,26 +3472,164 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1025px) {
     .hero-grid-desktop {
-        align-items: stretch;
+        align-items: start; /* Align grid columns tightly to the top fold */
     }
     .hero-content-desktop {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: auto;
         min-height: max-content;
-        gap: 20px;
+        gap: 0; /* Remove massive flex gap to bring elements closer */
     }
     .hero-content-desktop .doctor-expert-card {
-        margin-top: auto;
+        margin-top: 15px;
     }
     .hero-form-wrapper {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: auto;
         min-height: max-content;
-        gap: 20px;
+        gap: 15px; /* Compact spacing for right column */
     }
     .hero-form-wrapper .trusted-ratings-card {
-        margin-top: auto;
+        margin-top: 0;
+    }
+}
+
+/* ==================== CENTERED HERO BADGES & DIVIDER ==================== */
+.hero-curved-line {
+    width: 160px;
+    height: 8px;
+    margin: 10px auto 16px auto;
+    display: block;
+}
+
+.hero-curved-line svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.hero-circular-badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 330px;
+    margin: 25px auto 10px auto;
+    gap: 0;
+}
+
+.hero-circular-badge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    max-width: 80px;
+}
+
+.hero-circle-icon-box {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1.5px solid #dbeafe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-blue-dark);
+    font-size: 1.25rem;
+    box-shadow: 0 4px 10px rgba(11, 53, 108, 0.05);
+    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), color var(--transition-fast);
+}
+
+.hero-circle-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--primary-blue-dark);
+    line-height: 1.25;
+    margin-top: 8px;
+    display: block;
+}
+
+/* Hover effect on badges */
+.hero-circular-badge-item:hover .hero-circle-icon-box {
+    transform: translateY(-4px);
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+    box-shadow: 0 8px 20px rgba(11, 53, 108, 0.12);
+}
+
+/* Desktop layout centering and sizing modifications */
+.hero-centered-header-desktop {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 0 30px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-centered-header-desktop .hero-title {
+    font-size: 3.2rem;
+    margin-bottom: 12px;
+}
+
+.hero-centered-header-desktop .hero-desc {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+    .hero-curved-line {
+        width: 240px;
+        height: 10px;
+        margin: 8px 0 14px 0; /* Tightened margins */
+    }
+    
+    .hero-circular-badges {
+        justify-content: flex-start;
+        gap: 30px;
+        max-width: none;
+        margin: 12px 0 12px 0; /* Tightened badge margins */
+    }
+    
+    .hero-circular-badge-item {
+        flex: none;
+        width: 110px;
+        max-width: none;
+    }
+    
+    .hero-circle-icon-box {
+        width: 76px;
+        height: 76px;
+        font-size: 1.65rem;
+        border-width: 2px;
+        box-shadow: 0 6px 16px rgba(11, 53, 108, 0.07);
+    }
+    
+    .hero-circle-label {
+        font-size: 0.88rem;
+        margin-top: 8px; /* Tightened text offset */
+        line-height: 1.3;
+        text-align: center;
+    }
+    
+    /* Ensure left column elements align nicely to the left inside the grid column */
+    .hero-content-desktop {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .hero-content-desktop .hero-platform-wrapper {
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: -30px; /* Pulls showcase image upward to seamlessly close the white gap */
+    }
+    .hero-content-desktop .doctor-expert-card {
+        width: 100%;
+        max-width: 580px;
+        margin-top: 15px; /* Tightened margins */
     }
 }
