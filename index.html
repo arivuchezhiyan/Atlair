@@ -11,8 +11,8 @@
         content="hearing aids in chennai, hearing aid price in chennai, best digital hearing aids, invisible hearing aid clinic, signia partners, audiology test, free home trial hearing aid" />
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-    <!-- Local Stylesheet -->
-    <link href="styles.css?v=1.5.1" rel="stylesheet" />
+    <!-- Local Sheet -->
+    <link href="styles.css?v=1.7.4" rel="stylesheet" />
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         <div class="container">
             <!-- Logo Section -->
             <div class="logo-container">
-                <img alt="Altair Logo" class="logo-img" src="logo_bg.png" />
+                <img alt="Altair Logo" class="logo-img" src="images/logo_bg.png" />
                 <span class="logo-badge hidden-mobile">Chennai</span>
             </div>
 
@@ -88,7 +88,7 @@
             <a href="#brands">Partner Brands</a>
         </div>
         <div class="drawer-footer">
-            <button class="btn btn-orange open-lead-modal-btn">Book Consultation</button>
+            <a href="#mobile-lead-form" class="btn btn-orange">Book Consultation</a>
             <a href="https://wa.me/917397620506?text=Hi%20Altair%20Hearing%20Centre,%20I%20would%20like%20to%20book%20a%20free%20hearing%20consultation."
                 class="btn btn-green" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-whatsapp"></i> WhatsApp Chat
@@ -98,7 +98,15 @@
 
     <!-- ==================== HERO SECTION: MOBILE LAYOUT ==================== -->
     <section class="hero-section mobile-layout hidden-desktop">
+        <!-- Background plant pot to match reference exactly -->
+        <img src="images/plant-pot-noback.png" alt="" class="mobile-hero-plant" />
+        
         <div class="container">
+            <!-- Chennai Tag -->
+            <div class="hero-chennai-tag">
+                <span class="tag-dash">—</span> CHENNAI <span class="tag-dash">—</span>
+            </div>
+            
             <h2 class="hero-title">
                 Know Your<br />
                 <span class="highlight">Best Deal</span>
@@ -106,8 +114,8 @@
             
             <!-- Elegant Curved Line SVG Divider -->
             <div class="hero-curved-line">
-                <svg viewBox="0 0 100 10" preserveAspectRatio="none">
-                    <path d="M5,5 Q50,0 95,5" stroke="var(--accent-blue)" stroke-width="1.8" fill="none" stroke-linecap="round" />
+                <svg viewBox="0 0 120 8" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 6px;">
+                    <path d="M4 6C40 2 80 2 116 6" stroke="#0052cc" stroke-width="1.8" stroke-linecap="round"/>
                 </svg>
             </div>
             
@@ -117,48 +125,183 @@
             <div class="hero-circular-badges">
                 <div class="hero-circular-badge-item">
                     <div class="hero-circle-icon-box">
-                        <i class="fas fa-tags"></i>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width: 28px; height: 28px;">
+                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                            <line x1="7" y1="7" x2="7.01" y2="7" stroke-width="3"></line>
+                            <text x="8" y="15" font-size="7" font-weight="900" fill="currentColor" stroke="none" font-family="'Outfit', sans-serif">₹</text>
+                        </svg>
                     </div>
                     <span class="hero-circle-label">Best Price<br/>Guaranteed</span>
                 </div>
                 <div class="hero-circular-badge-item">
                     <div class="hero-circle-icon-box">
-                        <i class="fas fa-user-md"></i>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width: 28px; height: 28px;">
+                            <circle cx="12" cy="7" r="4"></circle>
+                            <path d="M5 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"></path>
+                            <path d="M10 15v1a2 2 0 0 0 4 0v-1"></path>
+                            <circle cx="12" cy="18.5" r="1.2" fill="currentColor"></circle>
+                            <path d="M17 10h2M18 9v2" stroke-width="1.2"></path>
+                        </svg>
                     </div>
                     <span class="hero-circle-label">Expert<br/>Audiologists</span>
                 </div>
                 <div class="hero-circular-badge-item">
                     <div class="hero-circle-icon-box">
-                        <i class="fas fa-home"></i>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width: 28px; height: 28px;">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
                     </div>
                     <span class="hero-circle-label">Free Home<br/>Trial</span>
                 </div>
                 <div class="hero-circular-badge-item">
                     <div class="hero-circle-icon-box">
-                        <i class="fas fa-shield-alt"></i>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width: 28px; height: 28px;">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <polyline points="9 11 11 13 15 9" stroke-width="2"></polyline>
+                        </svg>
                     </div>
                     <span class="hero-circle-label">Up to 4 Years<br/>Warranty</span>
                 </div>
             </div>
 
             <div class="hero-platform-wrapper">
-                <a href="#" class="hero-clickable-image open-lead-modal-btn">
-                    <img alt="Hearing Aids Models" class="hero-platform-img" src="altair_front.png" />
+                <a href="#mobile-lead-form" class="hero-clickable-image">
+                    <img alt="Hearing Aids Models" class="hero-platform-img" src="images/Layer 2.png" />
                 </a>
             </div>
+        </div>
+    </section>
 
-            <!-- Lady Doctor Expert Card Mobile -->
-            <div class="doctor-expert-card">
-                <div class="doctor-expert-img-wrapper">
-                    <img src="lakshmi.png" alt="Clinical Audiologist" class="doctor-expert-img" />
+    <!-- ==================== MOBILE LEAD SECTION (SECOND PAGE) ==================== -->
+    <section id="mobile-lead-form" class="mobile-lead-section hidden-desktop">
+        <div class="container">
+            <div class="matched-form-card" style="text-align: left; position: relative;">
+                <div class="form-icon-circle-top">
+                    <i class="fas fa-headset"></i>
                 </div>
-                <div class="doctor-expert-info">
-                    <h4>Talk to Our Expert Audiologists</h4>
-                    <ul class="doctor-expert-bullets">
-                        <li><i class="fas fa-check-circle"></i> Accurate trial of hearing needs.</li>
-                        <li><i class="fas fa-check-circle"></i> Professional advice for testing aids.</li>
-                        <li><i class="fas fa-check-circle"></i> Fitment and guidance check.</li>
+                <div style="margin-bottom: 12px; border-bottom: 1px solid rgba(0,0,0,0.06); padding-bottom: 10px; text-align: center;">
+                    <h3 style="font-size: 1.4rem; color: var(--primary-blue-dark); text-align: center; width: 100%; margin: 0;">Get Your Best Price</h3>
+                </div>
+                <p style="color: var(--accent-green); font-weight: 800; font-size: 1.15rem; margin-top: 2px; margin-bottom: 20px; text-align: center; text-transform: none; letter-spacing: normal;">Estimate Now</p>
+                <form class="lead-generation-form">
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <div class="input-icon-wrapper">
+                            <i class="fas fa-user input-field-icon"></i>
+                            <input class="form-input" placeholder="Your Name" type="text" required name="clientName"
+                                pattern="^[a-zA-Z\s]{3,50}$" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
+                                title="Please enter a valid full name (minimum 3 characters, letters and spaces only)." />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <div class="input-icon-wrapper">
+                            <i class="fas fa-phone-alt input-field-icon"></i>
+                            <input class="form-input" placeholder="Mobile Number" type="tel" pattern="^[6789][0-9]{9}$"
+                                maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
+                                name="clientPhone"
+                                title="Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9." />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Pin Code</label>
+                        <div class="input-icon-wrapper">
+                            <i class="fas fa-map-marker-alt input-field-icon"></i>
+                            <input class="form-input" placeholder="Pincode" type="text" pattern="^[1-9][0-9]{5}$"
+                                maxlength="6" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
+                                name="clientPincode" title="Please enter a valid 6-digit pin code (100000 to 999999)." />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Primary Hearing Concern</label>
+                        <div class="input-icon-wrapper">
+                            <i class="fas fa-question-circle input-field-icon"></i>
+                            <select class="form-select" required name="clientConcern">
+                                <option value="" disabled selected>Select your concern</option>
+                                <option value="Difficulty understanding speech in noise">Difficulty in noisy environments</option>
+                                <option value="Tinnitus (ringing in the ears)">Tinnitus / Ringing in ears</option>
+                                <option value="Age-related gradual hearing loss">Age-related hearing loss</option>
+                                <option value="Looking to upgrade existing hearing aid">Upgrading existing device</option>
+                                <option value="Booking for a parent or family member">Consultation for family member</option>
+                                <option value="General check-up / routine screening">General hearing screening</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label class="form-checkbox-label">
+                        <input type="checkbox" checked required name="whatsappOptIn" />
+                        <span>Receive details &amp; offers on <i class="fab fa-whatsapp"></i> WhatsApp</span>
+                    </label>
+
+                    <button class="btn btn-submit" type="submit" style="width: 100%;">
+                        Get My Best Deal <i class="fas fa-shield-alt"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Lady Doctor Expert Card Mobile (Below Form) -->
+            <div class="mobile-doctor-card">
+                <div class="mobile-doctor-img-wrapper">
+                    <img src="images/doctor-ref.png" alt="Clinical Audiologist" class="mobile-doctor-img" />
+                </div>
+                <div class="mobile-doctor-info">
+                    <h4>Talk to Our Expert Audiologist</h4>
+                    <ul class="mobile-doctor-bullets">
+                        <li><i class="fas fa-check-circle"></i> Understand your hearing needs</li>
+                        <li><i class="fas fa-check-circle"></i> Recommend the right hearing aid</li>
+                        <li><i class="fas fa-check-circle"></i> Get your best price instantly</li>
                     </ul>
+                </div>
+            </div>
+            
+            <!-- Trusted by Thousands Ratings Mobile (Below Doctor Card) -->
+            <div class="mobile-trusted-ratings-card">
+                <h3 class="mobile-trusted-title">Trusted by Thousands</h3>
+                <div class="mobile-trusted-accent-line"></div>
+                
+                <div class="mobile-trusted-metrics-grid">
+                    <!-- Column 1: Google -->
+                    <div class="mobile-trusted-metric-item">
+                        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="mobile-trusted-logo" />
+                        <span class="mobile-rating-val">4.8</span>
+                        <div class="mobile-stars">
+                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#16a34a"/></svg>
+                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#16a34a"/></svg>
+                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#16a34a"/></svg>
+                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#16a34a"/></svg>
+                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#16a34a"/></svg>
+                        </div>
+                        <span class="mobile-metric-lbl">2000+ Reviews</span>
+                    </div>
+                    
+                    <!-- Column 2: Trustpilot -->
+                    <div class="mobile-trusted-metric-item">
+                        <svg class="sharp-star mobile-trustpilot-big-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#16a34a"/></svg>
+                        <span class="mobile-rating-val">4.7</span>
+                        <div class="mobile-trustpilot-star-boxes">
+                            <span class="mobile-star-box"><svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#ffffff"/></svg></span>
+                            <span class="mobile-star-box"><svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#ffffff"/></svg></span>
+                            <span class="mobile-star-box"><svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#ffffff"/></svg></span>
+                            <span class="mobile-star-box"><svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#ffffff"/></svg></span>
+                            <span class="mobile-star-box half-active"><svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#ffffff"/></svg></span>
+                        </div>
+                        <span class="mobile-metric-lbl">Trustpilot</span>
+                    </div>
+                    
+                    <!-- Column 3: Happy Customers -->
+                    <div class="mobile-trusted-metric-item">
+                        <div class="mobile-happy-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#0052cc" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <span class="mobile-rating-val customer-count">15,000+</span>
+                        <span class="mobile-metric-lbl text-navy">Happy Customers</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -213,14 +356,14 @@
 
                 <div class="hero-platform-wrapper">
                     <a href="#desktop-lead-form" class="hero-clickable-image">
-                        <img alt="Hearing Aids Models" class="hero-platform-img" src="altair_front.png" />
+                        <img alt="Hearing Aids Models" class="hero-platform-img" src="images/altair_front.png" />
                     </a>
                 </div>
 
                 <!-- Lady Doctor Expert Card Desktop -->
                 <div class="doctor-expert-card">
                     <div class="doctor-expert-img-wrapper">
-                        <img src="lakshmi.png" alt="Clinical Audiologist" class="doctor-expert-img" />
+                        <img src="images/lakshmi.png" alt="Clinical Audiologist" class="doctor-expert-img" />
                     </div>
                     <div class="doctor-expert-info">
                         <h4>Talk to Our Expert Audiologists</h4>
@@ -360,27 +503,18 @@
                 <!-- Card 1 -->
                 <div class="features-row-card">
                     <div class="card-image-wrapper">
-                        <img src="img1 copy.png" alt="Expert Audiologist" class="feature-card-img" />
+                        <img src="images/img1 copy.png" alt="Expert Audiologist" class="feature-card-img" />
                     </div>
                     <div class="card-content">
                         <h3>Expert Audiologist</h3>
                         <p>Personalized Care</p>
                     </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="features-row-card">
-                    <div class="card-image-wrapper">
-                        <img src="img2 ref.png" alt="Latest Technology" class="feature-card-img" />
-                    </div>
-                    <div class="card-content">
-                        <h3>Latest Technology</h3>
-                        <p>Hearing Aids</p>
-                    </div>
-                </div>
+
                 <!-- Card 3 -->
                 <div class="features-row-card">
                     <div class="card-image-wrapper">
-                        <img src="img3 _ref.png" alt="Free Home Trial" class="feature-card-img" />
+                        <img src="images/img3 _ref.png" alt="Free Home Trial" class="feature-card-img" />
                     </div>
                     <div class="card-content">
                         <h3>Free Home Trial</h3>
@@ -390,7 +524,7 @@
                 <!-- Card 4 -->
                 <div class="features-row-card">
                     <div class="card-image-wrapper">
-                        <img src="img4ref.png" alt="Up to 4 Years" class="feature-card-img" />
+                        <img src="images/img4ref.png" alt="Up to 4 Years" class="feature-card-img" />
                     </div>
                     <div class="card-content">
                         <h3>Up to 4 Years</h3>
@@ -400,7 +534,7 @@
                 <!-- Card 5 -->
                 <div class="features-row-card">
                     <div class="card-image-wrapper">
-                        <img src="img5ref.png" alt="Best Price" class="feature-card-img" />
+                        <img src="images/img5ref.png" alt="Best Price" class="feature-card-img" />
                     </div>
                     <div class="card-content">
                         <h3>Best Price</h3>
@@ -458,13 +592,13 @@
             </div>
 
             <!-- Right Column: Advanced Hearing Aids For Every Need -->
-            <div class="split-column-right">
+            <div class="split-column-right hidden-mobile">
                 <h2 class="column-title">Advanced Hearing Aids For Every Need</h2>
                 <div class="split-list-items">
                     <!-- Device 1: BTE -->
                     <a href="#desktop-lead-form" class="split-list-item open-lead-modal-btn">
                         <div class="split-product-photo-wrapper">
-                            <img src="device1.png" alt="Behind-The-Ear (BTE)" class="split-product-photo" />
+                            <img src="images/device1.png" alt="Behind-The-Ear (BTE)" class="split-product-photo" />
                         </div>
                         <div class="split-item-text">
                             <h3>Behind-The-Ear (BTE)</h3>
@@ -474,7 +608,7 @@
                     <!-- Device 2: RIC -->
                     <a href="#desktop-lead-form" class="split-list-item open-lead-modal-btn">
                         <div class="split-product-photo-wrapper">
-                            <img src="device2.png" alt="Receiver-In-Canal (RIC)" class="split-product-photo" />
+                            <img src="images/device2.png" alt="Receiver-In-Canal (RIC)" class="split-product-photo" />
                         </div>
                         <div class="split-item-text">
                             <h3>Receiver-In-Canal (RIC)</h3>
@@ -484,7 +618,7 @@
                     <!-- Device 3: ITC -->
                     <a href="#desktop-lead-form" class="split-list-item open-lead-modal-btn">
                         <div class="split-product-photo-wrapper">
-                            <img src="device3.png" alt="In-The-Canal (ITC)" class="split-product-photo" />
+                            <img src="images/device3.png" alt="In-The-Canal (ITC)" class="split-product-photo" />
                         </div>
                         <div class="split-item-text">
                             <h3>In-The-Canal (ITC)</h3>
@@ -494,7 +628,7 @@
                     <!-- Device 4: Rechargeable -->
                     <a href="#desktop-lead-form" class="split-list-item open-lead-modal-btn">
                         <div class="split-product-photo-wrapper">
-                            <img src="device4.png" alt="Rechargeable Hearing Aids" class="split-product-photo" />
+                            <img src="images/device4.png" alt="Rechargeable Hearing Aids" class="split-product-photo" />
                         </div>
                         <div class="split-item-text">
                             <h3>Rechargeable Hearing Aids</h3>
@@ -514,7 +648,7 @@
                 <!-- Interactive Map on the Left -->
                 <div class="chennai-map-wrapper">
                     <div class="chennai-map-container">
-                        <img src="Map.png" alt="Chennai Map" class="chennai-map-img" />
+                        <img src="images/Map.png" alt="Chennai Map" class="chennai-map-img" />
                         
                         <!-- Vadapalani (Top-Left) -->
                         <a href="#desktop-lead-form" class="map-marker-pin open-lead-modal-btn" style="left: 32.9%; top: 18.4%;">
@@ -564,7 +698,7 @@
                 </div>
 
                 <!-- 2x2 Feature Grid on the Right -->
-                <div class="serving-benefits-grid">
+                <div class="serving-benefits-grid hidden-mobile grid">
                     <!-- Feature 1: Best Price Guaranteed -->
                     <div class="serving-benefit-item">
                         <div class="benefit-icon-circle">
@@ -651,11 +785,11 @@
         <div class="container">
             <h2 class="brands-title">Top Hearing Aid Brands We Partner With</h2>
             <div class="brands-flex">
-                <img alt="Oticon" class="brand-logo" src="Oticon.png" />
-                <img alt="Phonak" class="brand-logo" src="Phonak.png" />
-                <img alt="Signia" class="brand-logo" src="Signia.png" />
-                <img alt="ReSound" class="brand-logo" src="Resound GN.png" />
-                <img alt="Starkey" class="brand-logo" src="Starkey.png" />
+                <img alt="Oticon" class="brand-logo" src="images/Oticon.png" />
+                <img alt="Phonak" class="brand-logo" src="images/Phonak.png" />
+                <img alt="Signia" class="brand-logo" src="images/Signia.png" />
+                <img alt="ReSound" class="brand-logo" src="images/Resound GN.png" />
+                <img alt="Starkey" class="brand-logo" src="images/Starkey.png" />
             </div>
         </div>
     </section>
@@ -750,7 +884,7 @@
                 <!-- Brand Column with premium white rounded box containing logo and partner text -->
                 <div class="footer-brand">
                     <div class="footer-logo-badge">
-                        <img alt="Altair Logo" class="footer-logo-img" src="logo_bg.png" />
+                        <img alt="Altair Logo" class="footer-logo-img" src="images/logo_bg.png" />
                     </div>
                     <span class="footer-partner-text">Authorized Partner of Signia and Siemens.</span>
                 </div>
@@ -784,7 +918,7 @@
             <i class="fas fa-phone-alt"></i>
             <span>Call</span>
         </a>
-        <a href="#" class="sticky-footer-btn appointment open-lead-modal-btn" aria-label="Book Appointment">
+        <a href="#mobile-lead-form" class="sticky-footer-btn appointment" aria-label="Book Appointment">
             <i class="fas fa-calendar-alt"></i>
             <span>Enquiry</span>
         </a>
@@ -805,79 +939,6 @@
         </div>
     </div>
 
-    <!-- ==================== LEAD CAPTURE MODAL (FOR MOBILE BUTTON CLICK) ==================== -->
-    <div class="success-modal" id="lead-modal">
-        <div class="success-modal-card matched-form-card" style="text-align: left; position: relative;">
-            <div class="form-icon-circle-top">
-                <i class="fas fa-headset"></i>
-            </div>
-            <div class="drawer-header"
-                style="margin-bottom: 12px; border-bottom: 1px solid rgba(0,0,0,0.06); padding-bottom: 10px;">
-                <h3 style="font-size: 1.4rem; color: var(--primary-blue-dark); text-align: center; width: 100%;">Get Your Best Price</h3>
-                <button class="drawer-close-btn" id="lead-modal-close" aria-label="Close Form"
-                    style="color: var(--text-muted); position: absolute; right: 20px; top: 20px;">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <p style="color: var(--accent-green); font-weight: 800; font-size: 1.15rem; margin-top: 2px; margin-bottom: 20px; text-align: center; text-transform: none; letter-spacing: normal;">Estimate Now</p>
-            <form class="lead-generation-form">
-                <div class="form-group">
-                    <label class="form-label">Full Name</label>
-                    <div class="input-icon-wrapper">
-                        <i class="fas fa-user input-field-icon"></i>
-                        <input class="form-input" placeholder="Your Name" type="text" required name="clientName"
-                            pattern="^[a-zA-Z\s]{3,50}$" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
-                            title="Please enter a valid full name (minimum 3 characters, letters and spaces only)." />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Phone Number</label>
-                    <div class="input-icon-wrapper">
-                        <i class="fas fa-phone-alt input-field-icon"></i>
-                        <input class="form-input" placeholder="Mobile Number" type="tel" pattern="^[6789][0-9]{9}$"
-                            maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
-                            name="clientPhone"
-                            title="Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9." />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Pin Code</label>
-                    <div class="input-icon-wrapper">
-                        <i class="fas fa-map-marker-alt input-field-icon"></i>
-                        <input class="form-input" placeholder="Pincode" type="text" pattern="^[1-9][0-9]{5}$"
-                            maxlength="6" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
-                            name="clientPincode" title="Please enter a valid 6-digit pin code (100000 to 999999)." />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Primary Hearing Concern</label>
-                    <div class="input-icon-wrapper">
-                        <i class="fas fa-question-circle input-field-icon"></i>
-                        <select class="form-select" required name="clientConcern">
-                            <option value="" disabled selected>Select your concern</option>
-                            <option value="Difficulty understanding speech in noise">Difficulty in noisy environments
-                            </option>
-                            <option value="Tinnitus (ringing in the ears)">Tinnitus / Ringing in ears</option>
-                            <option value="Age-related gradual hearing loss">Age-related hearing loss</option>
-                            <option value="Looking to upgrade existing hearing aid">Upgrading existing device</option>
-                            <option value="Booking for a parent or family member">Consultation for family member</option>
-                            <option value="General check-up / routine screening">General hearing screening</option>
-                        </select>
-                    </div>
-                </div>
-
-                <label class="form-checkbox-label">
-                    <input type="checkbox" checked required name="whatsappOptIn" />
-                    <span>Receive details &amp; offers on <i class="fab fa-whatsapp"></i> WhatsApp</span>
-                </label>
-
-                <button class="btn btn-submit" type="submit" style="width: 100%;">
-                    Get My Best Deal <i class="fas fa-shield-alt"></i>
-                </button>
-            </form>
-        </div>
-    </div>
-
     <!-- ==================== FLOATING CONTACT BUTTONS ==================== -->
     <div class="floating-contact-buttons">
         <a href="https://wa.me/917397620506?text=Hi%20Altair%20Hearing%20Centre,%20I%20would%20like%20to%20book%20a%20free%20hearing%20consultation."
@@ -892,7 +953,7 @@
     </div>
 
     <!-- Local Script -->
-    <script src="script.js?v=1.3.3"></script>
+    <script src="js/script.js?v=1.3.3"></script>
 </body>
 
 </html>

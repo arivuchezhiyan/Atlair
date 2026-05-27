@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeDrawerBtn = document.getElementById('drawer-close');
     const navDrawer = document.getElementById('mobile-nav-drawer');
     const drawerOverlay = document.getElementById('drawer-overlay');
-    const drawerLinks = navDrawer.querySelectorAll('.drawer-menu a');
+    const drawerLinks = navDrawer.querySelectorAll('.drawer-menu a, .drawer-footer a');
 
     function openDrawer() {
         navDrawer.classList.add('active');
@@ -31,42 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // ==================== LEAD CAPTURE MODAL ====================
-    const leadModal = document.getElementById('lead-modal');
-    const closeLeadModalBtn = document.getElementById('lead-modal-close');
-    const openLeadBtns = document.querySelectorAll('.open-lead-modal-btn');
-
-    function openLeadModal() {
-        if (leadModal) {
-            leadModal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-    }
-
+    // Modal popup has been removed. Form is now inline as a second section/page.
     function closeLeadModal() {
-        if (leadModal) {
-            leadModal.classList.remove('active');
-            if (!navDrawer.classList.contains('active')) {
-                document.body.style.overflow = '';
-            }
-        }
+        // Safe no-op stub for compatibility with form submissions
     }
-
-    openLeadBtns.forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            const href = btn.getAttribute('href');
-            if (href && href.startsWith('#') && href.length > 1) {
-                if (window.innerWidth <= 1024) {
-                    e.preventDefault();
-                    openLeadModal();
-                }
-            } else {
-                e.preventDefault();
-                openLeadModal();
-            }
-        });
-    });
-
-    if (closeLeadModalBtn) closeLeadModalBtn.addEventListener('click', closeLeadModal);
 
 
     // ==================== SUCCESS MODAL DIALOG ====================
@@ -260,15 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ==================== AUTO-POPUP FORM ON MOBILE (AFTER 2S) ====================
-    if (window.innerWidth < 1024) {
-        setTimeout(() => {
-            const successModalActive = successModal && successModal.classList.contains('active');
-            const leadModalActive = leadModal && leadModal.classList.contains('active');
-            if (!successModalActive && !leadModalActive) {
-                openLeadModal();
-            }
-        }, 2000); // Pop up after 2 seconds on loading/reloads
-    }
+    // ==================== AUTO-POPUP FORM ON MOBILE (DISABLED) ====================
+    // Auto popup has been disabled as requested. Form is now inline as a second section/page.
 
 });
