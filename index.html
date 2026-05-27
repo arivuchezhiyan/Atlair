@@ -102,11 +102,6 @@
         <img src="images/plant-pot-noback.png" alt="" class="mobile-hero-plant" />
         
         <div class="container">
-            <!-- Chennai Tag -->
-            <div class="hero-chennai-tag">
-                <span class="tag-dash">—</span> CHENNAI <span class="tag-dash">—</span>
-            </div>
-            
             <h2 class="hero-title">
                 Know Your<br />
                 <span class="highlight">Best Deal</span>
@@ -114,8 +109,8 @@
             
             <!-- Elegant Curved Line SVG Divider -->
             <div class="hero-curved-line">
-                <svg viewBox="0 0 120 8" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 6px;">
-                    <path d="M4 6C40 2 80 2 116 6" stroke="#0052cc" stroke-width="1.8" stroke-linecap="round"/>
+                <svg viewBox="0 0 300 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 9C80 3 220 3 290 9" stroke="var(--accent-blue)" stroke-width="2.5" stroke-linecap="round"/>
                 </svg>
             </div>
             
@@ -125,41 +120,25 @@
             <div class="hero-circular-badges">
                 <div class="hero-circular-badge-item">
                     <div class="hero-circle-icon-box">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width: 28px; height: 28px;">
-                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
-                            <line x1="7" y1="7" x2="7.01" y2="7" stroke-width="3"></line>
-                            <text x="8" y="15" font-size="7" font-weight="900" fill="currentColor" stroke="none" font-family="'Outfit', sans-serif">₹</text>
-                        </svg>
+                        <i class="fas fa-tags"></i>
                     </div>
                     <span class="hero-circle-label">Best Price<br/>Guaranteed</span>
                 </div>
                 <div class="hero-circular-badge-item">
                     <div class="hero-circle-icon-box">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width: 28px; height: 28px;">
-                            <circle cx="12" cy="7" r="4"></circle>
-                            <path d="M5 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"></path>
-                            <path d="M10 15v1a2 2 0 0 0 4 0v-1"></path>
-                            <circle cx="12" cy="18.5" r="1.2" fill="currentColor"></circle>
-                            <path d="M17 10h2M18 9v2" stroke-width="1.2"></path>
-                        </svg>
+                        <i class="fas fa-user-md"></i>
                     </div>
                     <span class="hero-circle-label">Expert<br/>Audiologists</span>
                 </div>
                 <div class="hero-circular-badge-item">
                     <div class="hero-circle-icon-box">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width: 28px; height: 28px;">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                        </svg>
+                        <i class="fas fa-home"></i>
                     </div>
                     <span class="hero-circle-label">Free Home<br/>Trial</span>
                 </div>
                 <div class="hero-circular-badge-item">
                     <div class="hero-circle-icon-box">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width: 28px; height: 28px;">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                            <polyline points="9 11 11 13 15 9" stroke-width="2"></polyline>
-                        </svg>
+                        <i class="fas fa-shield-alt"></i>
                     </div>
                     <span class="hero-circle-label">Up to 4 Years<br/>Warranty</span>
                 </div>
@@ -204,30 +183,6 @@
                                 title="Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9." />
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label">Pin Code</label>
-                        <div class="input-icon-wrapper">
-                            <i class="fas fa-map-marker-alt input-field-icon"></i>
-                            <input class="form-input" placeholder="Pincode" type="text" pattern="^[1-9][0-9]{5}$"
-                                maxlength="6" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
-                                name="clientPincode" title="Please enter a valid 6-digit pin code (100000 to 999999)." />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Primary Hearing Concern</label>
-                        <div class="input-icon-wrapper">
-                            <i class="fas fa-question-circle input-field-icon"></i>
-                            <select class="form-select" required name="clientConcern">
-                                <option value="" disabled selected>Select your concern</option>
-                                <option value="Difficulty understanding speech in noise">Difficulty in noisy environments</option>
-                                <option value="Tinnitus (ringing in the ears)">Tinnitus / Ringing in ears</option>
-                                <option value="Age-related gradual hearing loss">Age-related hearing loss</option>
-                                <option value="Looking to upgrade existing hearing aid">Upgrading existing device</option>
-                                <option value="Booking for a parent or family member">Consultation for family member</option>
-                                <option value="General check-up / routine screening">General hearing screening</option>
-                            </select>
-                        </div>
-                    </div>
 
                     <label class="form-checkbox-label">
                         <input type="checkbox" checked required name="whatsappOptIn" />
@@ -266,11 +221,11 @@
                         <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="mobile-trusted-logo" />
                         <span class="mobile-rating-val">4.8</span>
                         <div class="mobile-stars">
-                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#16a34a"/></svg>
-                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#16a34a"/></svg>
-                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#16a34a"/></svg>
-                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#16a34a"/></svg>
-                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#16a34a"/></svg>
+                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#ffb800"/></svg>
+                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#ffb800"/></svg>
+                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#ffb800"/></svg>
+                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#ffb800"/></svg>
+                            <svg class="sharp-star" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z" fill="#ffb800"/></svg>
                         </div>
                         <span class="mobile-metric-lbl">2000+ Reviews</span>
                     </div>
@@ -309,61 +264,118 @@
 
     <!-- ==================== HERO SECTION: DESKTOP LAYOUT ==================== -->
     <section class="hero-section desktop-layout hidden-mobile">
-        <div class="container hero-grid-desktop">
-            <!-- Left Info Column -->
-            <div class="hero-content-desktop">
-                <h1 class="hero-title">
-                    Know Your<br />
-                    <span class="highlight">Best Deal</span>
-                </h1>
-                
-                <!-- Elegant Curved Line SVG Divider -->
-                <div class="hero-curved-line">
-                    <svg viewBox="0 0 100 10" preserveAspectRatio="none">
-                        <path d="M5,5 Q50,0 95,5" stroke="var(--accent-blue)" stroke-width="1.8" fill="none" stroke-linecap="round" />
-                    </svg>
-                </div>
-                
-                <p class="hero-desc">Get suggested hearing aids from our expert audiologists.</p>
+        <div class="container">
+            <!-- Main Hero Grid (Content + Form) -->
+            <div class="hero-grid-desktop">
+                <!-- Left Info Column -->
+                <div class="hero-content-desktop">
+                    <h1 class="hero-title">
+                        Know Your<br />
+                        <span class="highlight">Best Deal</span>
+                    </h1>
+                    
+                    <!-- Elegant Curved Line SVG Divider -->
+                    <div class="hero-curved-line">
+                        <svg viewBox="0 0 300 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 9C80 3 220 3 290 9" stroke="var(--accent-blue)" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    
+                    <p class="hero-desc">Get suggested hearing aids from our expert audiologists.</p>
 
-                <!-- Circular Feature Badges Row -->
-                <div class="hero-circular-badges">
-                    <div class="hero-circular-badge-item">
-                        <div class="hero-circle-icon-box">
-                            <i class="fas fa-tags"></i>
+                    <!-- Circular Feature Badges Row -->
+                    <div class="hero-circular-badges">
+                        <div class="hero-circular-badge-item">
+                            <div class="hero-circle-icon-box">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <span class="hero-circle-label">Best Price<br/>Guaranteed</span>
                         </div>
-                        <span class="hero-circle-label">Best Price<br/>Guaranteed</span>
+                        <div class="hero-circular-badge-item">
+                            <div class="hero-circle-icon-box">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <span class="hero-circle-label">Expert<br/>Audiologists</span>
+                        </div>
+                        <div class="hero-circular-badge-item">
+                            <div class="hero-circle-icon-box">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <span class="hero-circle-label">Free Home<br/>Trial</span>
+                        </div>
+                        <div class="hero-circular-badge-item">
+                            <div class="hero-circle-icon-box">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <span class="hero-circle-label">Up to 4 Years<br/>Warranty</span>
+                        </div>
                     </div>
-                    <div class="hero-circular-badge-item">
-                        <div class="hero-circle-icon-box">
-                            <i class="fas fa-user-md"></i>
-                        </div>
-                        <span class="hero-circle-label">Expert<br/>Audiologists</span>
-                    </div>
-                    <div class="hero-circular-badge-item">
-                        <div class="hero-circle-icon-box">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <span class="hero-circle-label">Free Home<br/>Trial</span>
-                    </div>
-                    <div class="hero-circular-badge-item">
-                        <div class="hero-circle-icon-box">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <span class="hero-circle-label">Up to 4 Years<br/>Warranty</span>
+
+                    <div class="hero-platform-wrapper">
+                        <a href="#desktop-lead-form" class="hero-clickable-image">
+                            <img alt="Hearing Aids Models" class="hero-platform-img" src="images/altair_front.png" />
+                        </a>
                     </div>
                 </div>
 
-                <div class="hero-platform-wrapper">
-                    <a href="#desktop-lead-form" class="hero-clickable-image">
-                        <img alt="Hearing Aids Models" class="hero-platform-img" src="images/altair_front.png" />
-                    </a>
-                </div>
+                <!-- Right Form Column -->
+                <div class="hero-form-wrapper" id="desktop-lead-form">
+                    <div class="hero-form-card">
+                        <div class="form-icon-circle-top">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h2>Get Your Best Price</h2>
+                        <p class="form-subtitle-highlighted">Estimate Now</p>
+                        <form class="lead-generation-form">
+                            <div class="form-group">
+                                <label class="form-label">Full Name</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fas fa-user input-field-icon"></i>
+                                    <input class="form-input" placeholder="Your Name" type="text" required
+                                        name="clientName" pattern="^[a-zA-Z\s]{3,50}$"
+                                        oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
+                                        title="Please enter a valid full name (minimum 3 characters, letters and spaces only)." />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Phone Number</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fas fa-phone-alt input-field-icon"></i>
+                                    <input class="form-input" placeholder="Mobile Number" type="tel"
+                                        pattern="^[6789][0-9]{9}$" maxlength="10"
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '')" required name="clientPhone"
+                                        title="Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9." />
+                                </div>
+                            </div>
 
+                            <div class="form-whatsapp-optin-strip">
+                                <div class="whatsapp-badge-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <label class="form-checkbox-label">
+                                    <input type="checkbox" checked required name="whatsappOptIn" />
+                                    <span>Receive appointment details &amp; updates on WhatsApp</span>
+                                </label>
+                            </div>
+
+                            <button class="btn btn-submit" type="submit">
+                                Get My Best Deal <i class="fas fa-shield-alt"></i>
+                            </button>
+                            <p class="form-disclaimer">
+                                By proceeding, you authorize Altair Hearing Revolution Chennai to contact you via WhatsApp, SMS,
+                                RCS &amp; Email. View our Privacy Policy.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div> <!-- closes hero-grid-desktop -->
+
+            <!-- Bottom Row (Doctor + Ratings) -->
+            <div class="hero-bottom-row-desktop">
                 <!-- Lady Doctor Expert Card Desktop -->
                 <div class="doctor-expert-card">
                     <div class="doctor-expert-img-wrapper">
-                        <img src="images/lakshmi.png" alt="Clinical Audiologist" class="doctor-expert-img" />
+                        <img src="images/doctor-ref.png" alt="Clinical Audiologist" class="doctor-expert-img" />
                     </div>
                     <div class="doctor-expert-info">
                         <h4>Talk to Our Expert Audiologists</h4>
@@ -374,87 +386,8 @@
                         </ul>
                     </div>
                 </div>
-            </div>
 
-            <!-- Right Form Column -->
-            <div class="hero-form-wrapper" id="desktop-lead-form">
-                <div class="hero-form-card">
-                    <div class="form-icon-circle-top">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h2>Get Your Best Price</h2>
-                    <p class="form-subtitle-highlighted">Estimate Now</p>
-                    <form class="lead-generation-form">
-                        <div class="form-group">
-                            <label class="form-label">Full Name</label>
-                            <div class="input-icon-wrapper">
-                                <i class="fas fa-user input-field-icon"></i>
-                                <input class="form-input" placeholder="Your Name" type="text" required
-                                    name="clientName" pattern="^[a-zA-Z\s]{3,50}$"
-                                    oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
-                                    title="Please enter a valid full name (minimum 3 characters, letters and spaces only)." />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Phone Number</label>
-                            <div class="input-icon-wrapper">
-                                <i class="fas fa-phone-alt input-field-icon"></i>
-                                <input class="form-input" placeholder="Mobile Number" type="tel"
-                                    pattern="^[6789][0-9]{9}$" maxlength="10"
-                                    oninput="this.value = this.value.replace(/[^0-9]/g, '')" required name="clientPhone"
-                                    title="Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9." />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Pin Code</label>
-                            <div class="input-icon-wrapper">
-                                <i class="fas fa-map-marker-alt input-field-icon"></i>
-                                <input class="form-input" placeholder="Pincode" type="text"
-                                    pattern="^[1-9][0-9]{5}$" maxlength="6"
-                                    oninput="this.value = this.value.replace(/[^0-9]/g, '')" required name="clientPincode"
-                                    title="Please enter a valid 6-digit pin code (100000 to 999999)." />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Primary Hearing Concern</label>
-                            <div class="input-icon-wrapper">
-                                <i class="fas fa-question-circle input-field-icon"></i>
-                                <select class="form-select" required name="clientConcern">
-                                    <option value="" disabled selected>Select your concern</option>
-                                    <option value="Difficulty understanding speech in noise">Difficulty in noisy
-                                        environments</option>
-                                    <option value="Tinnitus (ringing in the ears)">Tinnitus / Ringing in ears</option>
-                                    <option value="Age-related gradual hearing loss">Age-related hearing loss</option>
-                                    <option value="Looking to upgrade existing hearing aid">Upgrading existing device
-                                    </option>
-                                    <option value="Booking for a parent or family member">Consultation for family member
-                                    </option>
-                                    <option value="General check-up / routine screening">General hearing screening</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-whatsapp-optin-strip">
-                            <div class="whatsapp-badge-icon">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <label class="form-checkbox-label">
-                                <input type="checkbox" checked required name="whatsappOptIn" />
-                                <span>Receive appointment details &amp; updates on WhatsApp</span>
-                            </label>
-                        </div>
-
-                        <button class="btn btn-submit" type="submit">
-                            Get My Best Deal <i class="fas fa-shield-alt"></i>
-                        </button>
-                        <p class="form-disclaimer">
-                            By proceeding, you authorize Altair Hearing Revolution Chennai to contact you via WhatsApp, SMS,
-                            RCS &amp; Email. View our Privacy Policy.
-                        </p>
-                    </form>
-                </div>
-
-                <!-- Trusted by Thousands Ratings directly under form card -->
+                <!-- Trusted by Thousands Ratings -->
                 <div class="trusted-ratings-card">
                     <h3 class="trusted-title">Trusted by Thousands</h3>
                     <div class="trusted-metrics-grid">
@@ -489,7 +422,8 @@
                         </div>
                     </div>
                 </div>
-        </div> <!-- closes container hero-grid-desktop -->
+            </div>
+        </div> <!-- closes container -->
     </section>
 
     <!-- ==================== FEATURES ROW SECTION ==================== -->
@@ -545,96 +479,60 @@
         </div>
     </section>
 
-    <!-- ==================== SPLIT COLUMNS SECTION ==================== -->
-    <section class="split-columns-section">
-        <div class="container split-columns-grid">
-            <!-- Left Column: Why Choose Altair Chennai? -->
-            <div class="split-column-left">
-                <h2 class="column-title">Why Choose Altair Chennai?</h2>
-                <div class="split-list-items">
-                    <div class="split-list-item">
-                        <div class="split-item-icon-wrapper">
-                            <i class="fas fa-hand-holding-heart"></i>
-                        </div>
-                        <div class="split-item-text">
-                            <h3>Special Elder Care</h3>
-                            <p>Personalized care and patience for every senior.</p>
-                        </div>
+    <!-- ==================== WHY CHOOSE ALTAIR SECTION ==================== -->
+    <section class="split-columns-section" id="why-choose">
+        <div class="container">
+            <div class="section-title-wrapper-centered" style="margin-bottom: 30px;">
+                <h2 class="section-title-centered">Why Choose Altair Chennai?</h2>
+            </div>
+            <div class="why-choose-list">
+                <div class="why-choose-item">
+                    <div class="why-choose-icon-wrapper">
+                        <img src="images/icon1.png" alt="Special Elder Care Icon" class="why-choose-icon-img" />
                     </div>
-                    <div class="split-list-item">
-                        <div class="split-item-icon-wrapper">
-                            <i class="fas fa-children"></i>
-                        </div>
-                        <div class="split-item-text">
-                            <h3>Children Friendly</h3>
-                            <p>Gentle, friendly &amp; comfortable hearing care for children.</p>
-                        </div>
+                    <div class="why-choose-image-wrapper">
+                        <img src="images/refimage1.png" alt="Special Elder Care" class="why-choose-photo" />
                     </div>
-                    <div class="split-list-item">
-                        <div class="split-item-icon-wrapper">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <div class="split-item-text">
-                            <h3>After-Sales Care</h3>
-                            <p>We are with you always, for a lifetime of support.</p>
-                        </div>
-                    </div>
-                    <div class="split-list-item">
-                        <div class="split-item-icon-wrapper">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="split-item-text">
-                            <h3>Preferred by 1 Lac+ Customers</h3>
-                            <p>Trusted by lakhs of happy hearing aid users.</p>
-                        </div>
+                    <div class="why-choose-text">
+                        <h3>Special Elder Care</h3>
+                        <p>Personalized care and patience for every senior.</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Right Column: Advanced Hearing Aids For Every Need -->
-            <div class="split-column-right hidden-mobile">
-                <h2 class="column-title">Advanced Hearing Aids For Every Need</h2>
-                <div class="split-list-items">
-                    <!-- Device 1: BTE -->
-                    <a href="#desktop-lead-form" class="split-list-item open-lead-modal-btn">
-                        <div class="split-product-photo-wrapper">
-                            <img src="images/device1.png" alt="Behind-The-Ear (BTE)" class="split-product-photo" />
-                        </div>
-                        <div class="split-item-text">
-                            <h3>Behind-The-Ear (BTE)</h3>
-                            <p>Powerful &amp; suitable for all levels of hearing loss.</p>
-                        </div>
-                    </a>
-                    <!-- Device 2: RIC -->
-                    <a href="#desktop-lead-form" class="split-list-item open-lead-modal-btn">
-                        <div class="split-product-photo-wrapper">
-                            <img src="images/device2.png" alt="Receiver-In-Canal (RIC)" class="split-product-photo" />
-                        </div>
-                        <div class="split-item-text">
-                            <h3>Receiver-In-Canal (RIC)</h3>
-                            <p>Small, discreet &amp; comfortable.</p>
-                        </div>
-                    </a>
-                    <!-- Device 3: ITC -->
-                    <a href="#desktop-lead-form" class="split-list-item open-lead-modal-btn">
-                        <div class="split-product-photo-wrapper">
-                            <img src="images/device3.png" alt="In-The-Canal (ITC)" class="split-product-photo" />
-                        </div>
-                        <div class="split-item-text">
-                            <h3>In-The-Canal (ITC)</h3>
-                            <p>Custom-fit &amp; nearly invisible.</p>
-                        </div>
-                    </a>
-                    <!-- Device 4: Rechargeable -->
-                    <a href="#desktop-lead-form" class="split-list-item open-lead-modal-btn">
-                        <div class="split-product-photo-wrapper">
-                            <img src="images/device4.png" alt="Rechargeable Hearing Aids" class="split-product-photo" />
-                        </div>
-                        <div class="split-item-text">
-                            <h3>Rechargeable Hearing Aids</h3>
-                            <p>Hassle-free charging for all-day use.</p>
-                        </div>
-                    </a>
+                <div class="why-choose-item">
+                    <div class="why-choose-icon-wrapper">
+                        <img src="images/icon2.png" alt="Children Friendly Icon" class="why-choose-icon-img" />
+                    </div>
+                    <div class="why-choose-image-wrapper">
+                        <img src="images/refimage2.png" alt="Children Friendly" class="why-choose-photo" />
+                    </div>
+                    <div class="why-choose-text">
+                        <h3>Children Friendly</h3>
+                        <p>Gentle, friendly &amp; comfortable hearing care for children.</p>
+                    </div>
+                </div>
+                <div class="why-choose-item">
+                    <div class="why-choose-icon-wrapper">
+                        <img src="images/icon3.png" alt="After-Sales Care Icon" class="why-choose-icon-img" />
+                    </div>
+                    <div class="why-choose-image-wrapper">
+                        <img src="images/refimage3.png" alt="After-Sales Care" class="why-choose-photo" />
+                    </div>
+                    <div class="why-choose-text">
+                        <h3>After-Sales Care</h3>
+                        <p>We are with you always, for a lifetime of support.</p>
+                    </div>
+                </div>
+                <div class="why-choose-item">
+                    <div class="why-choose-icon-wrapper">
+                        <img src="images/icon4.png" alt="Preferred by 1 Lac+ Customers Icon" class="why-choose-icon-img" />
+                    </div>
+                    <div class="why-choose-image-wrapper">
+                        <img src="images/refimage4.png" alt="Preferred by 1 Lac+ Customers" class="why-choose-photo" />
+                    </div>
+                    <div class="why-choose-text">
+                        <h3>Preferred by 1 Lac+ Customers</h3>
+                        <p>Trusted by lakhs of happy hearing aid users.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -643,7 +541,7 @@
     <!-- ==================== SERVING CHENNAI MAP SECTION ==================== -->
     <section class="serving-chennai-section" id="serving-chennai">
         <div class="container">
-            <h2 class="section-title-centered text-center" style="margin-bottom: 40px; text-align: center;">Proudly Serving Chennai</h2>
+            <h2 class="section-title-centered text-center serving-title" style="text-align: center;">Proudly Serving Chennai</h2>
             <div class="serving-chennai-grid">
                 <!-- Interactive Map on the Left -->
                 <div class="chennai-map-wrapper">
@@ -761,6 +659,169 @@
                         </div>
                         <h3>Up to 4 Years Warranty</h3>
                         <p>Extended warranty on selected models.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-title-wrapper-centered">
+                <h2 class="section-title-centered">What Our Chennai Customers Say</h2>
+            </div>
+            
+            <div class="testimonials-grid-desktop">
+                <!-- Card 1 -->
+                <div class="testimonial-card-desktop">
+                    <img src="images/cust1.png" alt="Lakshmi S." class="testimonial-desktop-img" />
+                    <div class="testimonial-desktop-body">
+                        <p class="testimonial-desktop-quote">"I can hear conversations clearly now, even in noisy places. Thank you Altair!"</p>
+                        <div class="testimonial-desktop-meta">
+                            <div class="testimonial-desktop-name">- Lakshmi S.</div>
+                            <div class="testimonial-desktop-location">Adyar, Chennai</div>
+                            <div class="testimonial-desktop-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="testimonial-card-desktop">
+                    <img src="images/cust2.png" alt="Ramesh K." class="testimonial-desktop-img" />
+                    <div class="testimonial-desktop-body">
+                        <p class="testimonial-desktop-quote">"Excellent service and very transparent pricing. Highly recommended."</p>
+                        <div class="testimonial-desktop-meta">
+                            <div class="testimonial-desktop-name">- Ramesh K.</div>
+                            <div class="testimonial-desktop-location">Anna Nagar, Chennai</div>
+                            <div class="testimonial-desktop-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="testimonial-card-desktop">
+                    <img src="images/cust3.png" alt="Meena V." class="testimonial-desktop-img" />
+                    <div class="testimonial-desktop-body">
+                        <p class="testimonial-desktop-quote">"The free home trial helped me choose the right device."</p>
+                        <div class="testimonial-desktop-meta">
+                            <div class="testimonial-desktop-name">- Meena V.</div>
+                            <div class="testimonial-desktop-location">Velachery, Chennai</div>
+                            <div class="testimonial-desktop-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="testimonial-card-desktop">
+                    <img src="images/cust4.png" alt="Suresh B." class="testimonial-desktop-img" />
+                    <div class="testimonial-desktop-body">
+                        <p class="testimonial-desktop-quote">"The support and follow-up care from Altair is outstanding."</p>
+                        <div class="testimonial-desktop-meta">
+                            <div class="testimonial-desktop-name">- Suresh B.</div>
+                            <div class="testimonial-desktop-location">T. Nagar, Chennai</div>
+                            <div class="testimonial-desktop-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="testimonial-card-desktop">
+                    <img src="images/cust5.png" alt="Aravind M." class="testimonial-desktop-img" />
+                    <div class="testimonial-desktop-body">
+                        <p class="testimonial-desktop-quote">"Finally, I feel confident in meetings and family gatherings."</p>
+                        <div class="testimonial-desktop-meta">
+                            <div class="testimonial-desktop-name">- Aravind M.</div>
+                            <div class="testimonial-desktop-location">OMR, Chennai</div>
+                            <div class="testimonial-desktop-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="testimonial-card-desktop">
+                    <img src="images/cust6.png" alt="Revathi P." class="testimonial-desktop-img" />
+                    <div class="testimonial-desktop-body">
+                        <p class="testimonial-desktop-quote">"Affordable pricing and great service. Very happy with my hearing aid."</p>
+                        <div class="testimonial-desktop-meta">
+                            <div class="testimonial-desktop-name">- Revathi P.</div>
+                            <div class="testimonial-desktop-location">Porur, Chennai</div>
+                            <div class="testimonial-desktop-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="testimonial-card-desktop">
+                    <img src="images/cust7.png" alt="Gopalakrishnan R." class="testimonial-desktop-img" />
+                    <div class="testimonial-desktop-body">
+                        <p class="testimonial-desktop-quote">"The clarity and comfort are amazing. My family notices the change!"</p>
+                        <div class="testimonial-desktop-meta">
+                            <div class="testimonial-desktop-name">- Gopalakrishnan R.</div>
+                            <div class="testimonial-desktop-location">Mylapore, Chennai</div>
+                            <div class="testimonial-desktop-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="testimonial-card-desktop">
+                    <img src="images/cust8.png" alt="Indira S." class="testimonial-desktop-img" />
+                    <div class="testimonial-desktop-body">
+                        <p class="testimonial-desktop-quote">"Altair gave me a new life. I can enjoy watching TV and talking to friends."</p>
+                        <div class="testimonial-desktop-meta">
+                            <div class="testimonial-desktop-name">- Indira S.</div>
+                            <div class="testimonial-desktop-location">Ambattur, Chennai</div>
+                            <div class="testimonial-desktop-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
