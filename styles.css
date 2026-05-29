@@ -2507,38 +2507,13 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .main-header .container {
-        justify-content: space-between !important;
-        padding-left: 15px !important;
+        justify-content: flex-start !important;
+        padding-left: 5px !important;
         padding-right: 15px !important;
     }
 
     .mobile-header-cta {
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        padding: 8px 16px !important;
-        font-size: 0.85rem !important;
-        font-weight: 700 !important;
-        border-radius: var(--radius-full) !important;
-        background-color: var(--accent-orange) !important; /* brand deep navy blue */
-        color: #ffffff !important;
-        box-shadow: 0 2px 8px rgba(11, 53, 108, 0.15) !important;
-        text-decoration: none !important;
-    }
-
-    @media (hover: hover) {
-        .mobile-header-cta:hover {
-            background-color: var(--accent-orange-hover) !important; /* royal blue hover */
-        }
-    }
-
-    .mobile-header-cta:active {
-        background-color: var(--accent-orange-hover) !important; /* royal blue active */
-    }
-
-    .mobile-header-cta:focus {
-        background-color: var(--accent-orange) !important; /* revert to initial navy blue */
-        outline: none !important;
+        display: none !important;
     }
 
     /* Mobile Why Choose Us Grid (3 icons per row) */
